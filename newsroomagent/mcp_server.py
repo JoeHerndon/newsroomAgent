@@ -14,7 +14,7 @@ mcp = FastMCP("newsroomagent")
 # ARCHIVE SEARCH TOOL TO CALL RETRIEVE FUNCTION
 @mcp.tool()
 def archive_search(query: str, k: int = 5) -> list[dict]:
-    """Search the local news archive that covers workd events from the past ~30 days
+    """Search the local news archive that covers world events from the past ~30 days
     for past coverage on a topic.
     Use this first for any news event question. The archive likely has coverage on most 
     recent internation incidents.

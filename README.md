@@ -60,6 +60,12 @@ uv run python -m newsroomagent.mcp_server
 
 Requires `TAVILY_API_KEY` in the environment for `web_search`.
 
+Smoke test for MCP tool discovery. Spawns the MCP server, lists its tools, and prints names and short descriptions:
+
+```bash
+uv run python -m newsroomagent.graph
+```
+
 ### Option 3: Python smoke test
 
 ```bash
