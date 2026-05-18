@@ -20,6 +20,7 @@ Ingests a folder of news articles into a local vector store, then answers questi
 - `newsroomagent/ingest.py` loads `data/raw/*.txt`, chunks with a recursive splitter, embeds, and persists to `data/chroma/`.
 - `newsroomagent/retrieval.py` opens the persisted store and runs top-k similarity search, then prompts Claude with a citation-aware template.
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
+- `newsroomagent/graph.py` defines the LangGraph worker nodes (researcher, fact-checker) that consume the MCP tools. Researcher gathers notes with citations while fact-checker verifies claims against the archive and emits structured verdicts.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
 
 ## Quickstart
@@ -60,7 +61,7 @@ uv run python -m newsroomagent.mcp_server
 
 Requires `TAVILY_API_KEY` in the environment for `web_search`.
 
-Smoke test for the researcher agent. Spawns the MCP server, runs the researcher node on a sample topic, and prints its notes
+Smoke test for the researcher and fact checker nodes. Spawns the MCP server, runs the researcher node on a sample topic, and prints its notes. Feeds the notes into the fact-checker, and prints verdicts with evidence.
 
 ```bash
 uv run python -m newsroomagent.graph

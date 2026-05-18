@@ -3,6 +3,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage
 from langchain.agents import create_agent
+from pydantic import BaseModel, Field
 
 from newsroomagent.config import CHAT_MODEL
 from newsroomagent.models import NewsroomState
@@ -26,7 +27,7 @@ async def load_tools():
 def filter_tools(tools, names):
     return [t for t in tools if t.name in names]
 
-# DEFINE ROLE OF RESEARCHER
+#RESEARCHER
 RESEARCHER_PROMPT = """You are a news researcher gathering facts for a news segment.
 Use available tools to investigate the topic:
 Use archive_search first. It contains details on world events from the last month or so.
@@ -57,6 +58,66 @@ def make_researcher_node(tools):
 
     return researcher_node
 
+# FACT CHECKER
+class ClaimVerdict(BaseModel):
+    """SINGLE FACT-CHECK VERDICT FOR A SINGLE CLAIM."""
+    # FIELD DESCRIPTIONS ARE READ BY LLM WHEN DECIDING WHAT TO PUT INTO EACH VARIABLE
+    claim: str = Field(description="The factual claim being verified")
+    verified: bool = Field(description="True if the archive supports the claim, False if contradicted or unsupported")
+    evidence: str = Field(description="Quoted or paraphrased archive content used to make the verdict")
+
+
+class FactCheckReport(BaseModel):
+    """COLLECTION OF VERDICTS"""
+    verdicts: list[ClaimVerdict]
+
+FACTCHECKER_PROMPT = """You are a fact-checker for a news segment.
+You will receive a researcher's notes. Your job:
+1. Identify the key factual claims (dates, numbers, names, events, results).
+2. Use the archive_search tool to look up source material for each claim.
+3. Decide if the archive supports or contradicts each claim.
+When done, write a clear analysis listing each claim with your verdict
+and the supporting evidence you found. Focus on claims that affect the
+news story. Skip trivial details."""
+
+FORMATTER_PROMPT = """Convert the following fact-check analysis into a structured list of verdicts.
+Analysis:
+{analysis}
+Return one ClaimVerdict per checked claim. Use the exact claim text from the analysis."""
+
+def make_factchecker_node(tools):
+    """FACTCHECKER NODE. VERIFIES CLAIMS AGAINST THE ARCHIVE."""
+    # FACTCHECKER WILL ONLY USE archive_search TOOL
+    fc_tools = filter_tools(tools, ["archive_search"])
+
+    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0)
+    agent = create_agent(llm, fc_tools, system_prompt=FACTCHECKER_PROMPT)
+
+    # SECOND LLM RETURNS A FactCheckReport INSTANCE
+    formatter_llm = ChatAnthropic(model=CHAT_MODEL, temperature=0).with_structured_output(FactCheckReport)
+
+    async def factchecker_node(state: NewsroomState) -> dict:
+        # RUNS AGENT
+        result = await agent.ainvoke({
+            "messages": [HumanMessage(content=(
+                f"Topic: {state['topic']}\n\n"
+                f"Research notes to fact-check:\n{state['research_notes']}"
+            ))]
+        })
+        analysis = result["messages"][-1].content
+
+        # RUNS FORMATTER
+        report = await formatter_llm.ainvoke(
+            FORMATTER_PROMPT.format(analysis=analysis)
+        )
+
+        # CONVERT PYDANTIC OBJECT INTO PLAIN DICT
+        verdicts = [v.model_dump() for v in report.verdicts]
+        return {"fact_check_results": verdicts}
+
+    return factchecker_node
+
+
 
 # SMOKE TEST FOR MCP TOOL DISCOVERY
 if __name__ == "__main__":
@@ -64,10 +125,23 @@ if __name__ == "__main__":
         tools = await load_tools()
         print(f"LOADED {len(tools)} TOOLS FROM MCP SERVER.")
 
-        researcher = make_researcher_node(tools)
-        result = await researcher({"topic": "What elections happened in India in 2026?"})
+        topic = "What elections happened in India in 2026?"
 
-        print("\n--- RESEARCH NOTES ---")
-        print(result["research_notes"])
+        # RUN RESEARCHER
+        researcher = make_researcher_node(tools)
+        research_result = await researcher({"topic": topic})
+        print("--- RESEARCH NOTES ---")
+        print(research_result["research_notes"] + "...\n")
+
+        # FEED RESEARCHER OUTPUT INTO FACTCHECKER
+        state = {"topic": topic, "research_notes": research_result["research_notes"]}
+        factchecker = make_factchecker_node(tools)
+        fc_result = await factchecker(state)
+
+        print("--- FACT CHECKER VERDICTS ---")
+        for v in fc_result["fact_check_results"]:
+            tag = "[VERIFIED]" if v["verified"] else "[REJECTED]"
+            print(f"\n{tag} {v['claim']}")
+            print(f"  EVIDENCE: {v['evidence'][:200]}")
 
     asyncio.run(smoke())
