@@ -61,13 +61,15 @@ uv run python -m newsroomagent.mcp_server
 
 Requires `TAVILY_API_KEY` in the environment for `web_search`.
 
+### Option 3: LangGraph pipeline
+
 Smoke test for the researcher and fact checker nodes. Spawns the MCP server, runs the researcher node on a sample topic, and prints its notes. Feeds the notes into the fact-checker, and prints verdicts with evidence.
 
 ```bash
 uv run python -m newsroomagent.graph
 ```
 
-### Option 3: Python smoke test
+### Option 4: Retrieval via REPL
 
 ```bash
 uv run python
