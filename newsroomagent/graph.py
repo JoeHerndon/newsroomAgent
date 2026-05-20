@@ -1,7 +1,7 @@
 import asyncio
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_anthropic import ChatAnthropic
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain.agents import create_agent
 from pydantic import BaseModel, Field
 
@@ -118,6 +118,50 @@ def make_factchecker_node(tools):
     return factchecker_node
 
 
+# WRITER
+WRITER_PROMPT = """You are a news writer creating a news story segment.
+You will receive the topic from the user, esearch notes from a researcher and
+fact checked verdicts on the key claims.
+
+Your job is to write a brief and clear news script (about 400 words max) 
+covering the verified information.
+
+RULES:
+1. Use ONLY claims marked VERIFIED in the fact-check report.
+2. If a key fact was REJECTED, skip it.
+3. Write in news-anchor style: neutral and factual.
+4. No filler, no editorializing, no "in conclusion."
+5. End with a one-line attribution: "Source: NewsroomAgent archive."
+
+Structure: a lede paragraph with the most important fact, then 2-4 supporting paragraphs."""
+
+
+def make_writer_node():
+    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0.3)
+
+    async def writer_node(state: NewsroomState) -> dict:
+        # FORMAT FACT-CHECK RESULTS AS A LABELED LIST FOR THE LLM TO REFERENCE.
+        fc_lines = []
+        for v in state.get("fact_check_results", []):
+            tag = "VERIFIED" if v["verified"] else "REJECTED"
+            fc_lines.append(f"[{tag}] {v['claim']}")
+        fc_summary = "\n".join(fc_lines) if fc_lines else "(no fact-check available)"
+
+        user_msg = (
+            f"Topic: {state['topic']}\n\n"
+            f"Research notes:\n{state['research_notes']}\n\n"
+            f"Fact-check verdicts:\n{fc_summary}\n\n"
+            "Write the news segment script now."
+        )
+
+        response = await llm.ainvoke([
+            SystemMessage(content=WRITER_PROMPT),
+            HumanMessage(content=user_msg),
+        ])
+        return {"draft_script": response.content}
+
+    return writer_node
+
 
 # SMOKE TEST FOR MCP TOOL DISCOVERY
 if __name__ == "__main__":
@@ -126,22 +170,30 @@ if __name__ == "__main__":
         print(f"LOADED {len(tools)} TOOLS FROM MCP SERVER.")
 
         topic = "What elections happened in India in 2026?"
+        state = {"topic": topic}
 
         # RUN RESEARCHER
         researcher = make_researcher_node(tools)
-        research_result = await researcher({"topic": topic})
-        print("--- RESEARCH NOTES ---")
-        print(research_result["research_notes"] + "...\n")
+        state.update(await researcher(state))
+        print("RESEARCH DONE.\n")
+        # print(state["research_notes"])
 
-        # FEED RESEARCHER OUTPUT INTO FACTCHECKER
-        state = {"topic": topic, "research_notes": research_result["research_notes"]}
+        # RUN FACTCHECKER
         factchecker = make_factchecker_node(tools)
-        fc_result = await factchecker(state)
+        state.update(await factchecker(state))
+        verified_count = sum(1 for v in state["fact_check_results"] if v["verified"])
+        print(f"FACT CHECKER DONE. {verified_count}/{len(state['fact_check_results'])} VERIFIED.\n")
+        # for v in state["fact_check_results"]:
+        #     tag = "[VERIFIED]" if v["verified"] else "[REJECTED]"
+        #     print(f"\n{tag} {v['claim']}")
+        #     print(f"  EVIDENCE: {v['evidence']}")
 
-        print("--- FACT CHECKER VERDICTS ---")
-        for v in fc_result["fact_check_results"]:
-            tag = "[VERIFIED]" if v["verified"] else "[REJECTED]"
-            print(f"\n{tag} {v['claim']}")
-            print(f"  EVIDENCE: {v['evidence'][:200]}")
+        # RUN WRITER
+        writer = make_writer_node()
+        state.update(await writer(state))
+        print("WRITER DONE.\n")
+
+        print("--- FINAL NEWS SCRIPT ---\n")
+        print(state["draft_script"])
 
     asyncio.run(smoke())
