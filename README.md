@@ -1,10 +1,10 @@
 # newsroomAgent
 
-Work-in-progress newsroom research assistant. LangGraph pipeline, RAG over a news corpus, custom MCP server.
+Work-in-progress newsroom research assistant. Multi-agent LangGraph pipeline (researcher, fact-checker, writer), RAG over a news corpus, custom MCP server.
 
 ## What it does
 
-Ingests a folder of news articles into a local vector store, then answers questions about them with citations back to the original files. Exposes the same retrieval through a FastAPI endpoint and an MCP server, so it can be driven from a browser, curl, or an MCP-aware agent like Claude.
+Ingests a curated folder of news articles into a local vector store, then answers questions about them with citations back to the original files. Topics outside the archive return limited results. The retrieval is exposed through a FastAPI endpoint and an MCP server, so it can be driven from a browser, curl, or an MCP-aware agent like Claude.
 
 ## Stack
 
@@ -20,7 +20,7 @@ Ingests a folder of news articles into a local vector store, then answers questi
 - `newsroomagent/ingest.py` loads `data/raw/*.txt`, chunks with a recursive splitter, embeds, and persists to `data/chroma/`.
 - `newsroomagent/retrieval.py` opens the persisted store and runs top-k similarity search, then prompts Claude with a citation-aware template.
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
-- `newsroomagent/graph.py` defines the LangGraph worker nodes (researcher, fact-checker) that consume the MCP tools. Researcher gathers notes with citations while fact-checker verifies claims against the archive and emits structured verdicts.
+- `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
 
 ## Quickstart
@@ -37,7 +37,14 @@ Build the vector store from `data/raw/*.txt`. Rerun whenever source articles or 
 uv run python -c "from newsroomagent.ingest import ingest; ingest()"
 ```
 
-### Option 1: HTTP API
+### Option 1: LangGraph pipeline
+Smoke test of the compiled graph. Spawns the MCP server, hands the supervisor a sample topic, and lets it route between researcher, fact-checker, writer until the script is ready or the step budget is hit. Prints the supervisor's routing trace and the final news script.
+
+```bash
+uv run python -m newsroomagent.graph
+```
+
+### Option 2: HTTP API
 
 ```bash
 uv run uvicorn main:app --reload
@@ -51,7 +58,7 @@ curl -X POST http://127.0.0.1:8000/research \
   -d '{"topic":"What recent elections happened?","k":3}'
 ```
 
-### Option 2: MCP server
+### Option 3: MCP server
 
 Runs over stdio for use with an MCP client:
 
@@ -60,14 +67,6 @@ uv run python -m newsroomagent.mcp_server
 ```
 
 Requires `TAVILY_API_KEY` in the environment for `web_search`.
-
-### Option 3: LangGraph pipeline
-
-Smoke test for the researcher, fact checker and writer nodes. Spawns the MCP server, runs the researcher node on a sample topic. Feeds the notes into the fact-checker, and the passes the verified facts to the writer and prints the final news script.
-
-```bash
-uv run python -m newsroomagent.graph
-```
 
 ### Option 4: Retrieval via REPL
 

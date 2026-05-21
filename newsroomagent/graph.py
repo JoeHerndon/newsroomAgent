@@ -4,6 +4,8 @@ from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain.agents import create_agent
 from pydantic import BaseModel, Field
+from typing import Literal
+from langgraph.graph import StateGraph, END
 
 from newsroomagent.config import CHAT_MODEL
 from newsroomagent.models import NewsroomState
@@ -162,6 +164,111 @@ def make_writer_node():
 
     return writer_node
 
+# SUPERVISOR/ ROUTER
+MAX_STEPS = 6
+
+class SupervisorRouter(BaseModel):
+    next: Literal["researcher", "factchecker", "writer", "FINISH"] = Field(
+        description="The next node to execute, or FINISH to stop."
+    )
+    reason: str = Field(description="One short sentence explaining the choice.")
+
+SUPERVISOR_PROMPT = """You are the supervisor of a 3 agent news-research team.
+Your team:
+    researcher: gathers facts using archive_search, web_search, get_current_time tools.
+    factchecker: verifies the researcher's claims against the archive.
+    writer: produces the final news script from verified research.
+
+Routing rules:
+1. If research_notes is empty, route to researcher.
+2. If research_notes exists but fact-check results are empty, route to factchecker.
+3. If more than 10% of claims were REJECTED, route back to researcher for another pass.
+4. If most claims are VERIFIED, route to writer.
+5. Choose FINISH after the writer has produced the draft_script.
+
+# STATE SNAPSHOT
+Current state:
+- topic: {topic}
+- has research_notes: {has_notes}
+- fact-check results: {fc_count} total ({verified_count} verified, {rejected_count} rejected)
+- has draft_script: {has_draft}
+- step_count: {step_count} / {max_steps}
+"""
+
+# SUPERVISOR NODE. ROUTES BETWEEN AGENTS BASED ON STATE
+def make_supervisor_node():
+    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0).with_structured_output(SupervisorRouter)
+
+    async def supervisor_node(state: NewsroomState) -> dict:
+        step = state.get("step_count", 0) + 1
+
+        # STEP BUDGET GUARD. RUN BEFORE INVOKING LLM
+        if step >= MAX_STEPS:
+            if state.get("research_notes"):
+                print(f"  [supervisor step {step}] BUDGET EXCEEDED, FORCING WRITER")
+                return {"next": "writer", "step_count": step}
+            print(f"  [supervisor step {step}] BUDGET EXCEEDED WITH NO NOTES, FORCING FINISH")
+            return {"next": "FINISH", "step_count": step}
+
+        fc_results = state.get("fact_check_results", []) or []
+        verified = sum(v["verified"] for v in fc_results)
+        rejected = len(fc_results) - verified
+
+        prompt = SUPERVISOR_PROMPT.format(
+            topic=state.get("topic", ""),
+            has_notes=bool(state.get("research_notes")),
+            fc_count=len(fc_results),
+            verified_count=verified,
+            rejected_count=rejected,
+            has_draft=bool(state.get("draft_script")),
+            step_count=step,
+            max_steps=MAX_STEPS,
+        )
+
+        decision = await llm.ainvoke(prompt)
+        print(f"  [supervisor step {step}] -> {decision.next} ({decision.reason})")
+
+        return {"next": decision.next, "step_count": step}
+
+    return supervisor_node
+
+# CONDITIONAL EDGE: READS state['next'] AND RETURNS A NODE NAME OR END
+def route_from_supervisor(state: NewsroomState) -> str:
+    next_step = state["next"]
+    if next_step == "FINISH":
+        return END
+    return next_step
+
+# ASSEMBLE MULTI-AGENT GRAPH. RETURNS A COMPILED GRAPH
+def build_graph(tools):
+    g = StateGraph(NewsroomState)
+
+    # REGISTER ALL NODES
+    g.add_node("supervisor", make_supervisor_node())
+    g.add_node("researcher", make_researcher_node(tools))
+    g.add_node("factchecker", make_factchecker_node(tools))
+    g.add_node("writer", make_writer_node())
+
+    g.set_entry_point("supervisor")
+
+    # SUPERVISOR ROUTES TO ONE OF FOUR DESTINATIONS
+    g.add_conditional_edges(
+        "supervisor", route_from_supervisor,
+        {
+            "researcher": "researcher",
+            "factchecker": "factchecker",
+            "writer": "writer",
+            END: END,
+        }
+    )
+
+    # LOOP BACK TO SUPERVISOR; WRITER WILL END.
+    g.add_edge("researcher", "supervisor")
+    g.add_edge("factchecker", "supervisor")
+    g.add_edge("writer", END)
+
+    return g.compile()
+
 
 # SMOKE TEST FOR MCP TOOL DISCOVERY
 if __name__ == "__main__":
@@ -170,30 +277,30 @@ if __name__ == "__main__":
         print(f"LOADED {len(tools)} TOOLS FROM MCP SERVER.")
 
         topic = "What elections happened in India in 2026?"
-        state = {"topic": topic}
+        graph = build_graph(tools)
+        initial_state = {
+            "topic": topic,
+            "research_notes": "",
+            "fact_check_results": [],
+            "draft_script": "",
+            "next": "",
+            "step_count": 0,
+        }
 
-        # RUN RESEARCHER
-        researcher = make_researcher_node(tools)
-        state.update(await researcher(state))
-        print("RESEARCH DONE.\n")
-        # print(state["research_notes"])
+        print(f"INVOKING GRAPH ON: {topic}\n")
+        final_state = await graph.ainvoke(initial_state)
 
-        # RUN FACTCHECKER
-        factchecker = make_factchecker_node(tools)
-        state.update(await factchecker(state))
-        verified_count = sum(1 for v in state["fact_check_results"] if v["verified"])
-        print(f"FACT CHECKER DONE. {verified_count}/{len(state['fact_check_results'])} VERIFIED.\n")
-        # for v in state["fact_check_results"]:
-        #     tag = "[VERIFIED]" if v["verified"] else "[REJECTED]"
-        #     print(f"\n{tag} {v['claim']}")
-        #     print(f"  EVIDENCE: {v['evidence']}")
+        print("\n")
+        print(f"SUMMARY: {final_state['step_count']} supervisor turns")
+        print("\n")
+        verified = sum(1 for v in final_state["fact_check_results"] if v["verified"])
+        rejected = len(final_state["fact_check_results"]) - verified
+        print(f"fact-check: {verified} verified, {rejected} rejected")
 
-        # RUN WRITER
-        writer = make_writer_node()
-        state.update(await writer(state))
-        print("WRITER DONE.\n")
+        print("\n")
+        print("FINAL NEWS SCRIPT")
+        print("\n")
+        print(final_state["draft_script"])
 
-        print("--- FINAL NEWS SCRIPT ---\n")
-        print(state["draft_script"])
 
     asyncio.run(smoke())
