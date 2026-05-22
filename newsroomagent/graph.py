@@ -1,15 +1,18 @@
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent.parent / ".env")
+
 import asyncio
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_mcp_adapters.tools import load_mcp_tools
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain.agents import create_agent
 from pydantic import BaseModel, Field
 from typing import Literal
 from langgraph.graph import StateGraph, END
 
-from newsroomagent.config import CHAT_MODEL
 from newsroomagent.models import NewsroomState
+from newsroomagent.providers import get_chat_model
 
 
 # MCP CLIENT CONFIG. TELLS ADAPTER HOW TO LAUNCH THE SERVER.
@@ -42,7 +45,7 @@ def make_researcher_node(tools):
     )
 
     # BUILD THE LLM AND THE AGENT ONCE
-    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0)
+    llm = get_chat_model(temperature=0)
     agent = create_agent(llm, research_tools, system_prompt=RESEARCHER_PROMPT)
 
     async def researcher_node(state: NewsroomState) -> dict:
@@ -88,11 +91,11 @@ def make_factchecker_node(tools):
     # FACTCHECKER WILL ONLY USE archive_search TOOL
     fc_tools = filter_tools(tools, ["archive_search"])
 
-    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0)
+    llm = get_chat_model(temperature=0)
     agent = create_agent(llm, fc_tools, system_prompt=FACTCHECKER_PROMPT)
 
     # SECOND LLM RETURNS A FactCheckReport INSTANCE
-    formatter_llm = ChatAnthropic(model=CHAT_MODEL, temperature=0).with_structured_output(FactCheckReport)
+    formatter_llm = get_chat_model(temperature=0).with_structured_output(FactCheckReport)
 
     async def factchecker_node(state: NewsroomState) -> dict:
         # RUNS AGENT
@@ -135,7 +138,7 @@ Structure: a lede paragraph with the most important fact, then 2-4 supporting pa
 
 
 def make_writer_node():
-    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0.3)
+    llm = get_chat_model(temperature=0.3)
 
     async def writer_node(state: NewsroomState) -> dict:
         # FORMAT FACT-CHECK RESULTS AS A LABELED LIST FOR THE LLM TO REFERENCE.
@@ -193,7 +196,7 @@ Current state:
 
 # SUPERVISOR NODE. ROUTES BETWEEN AGENTS BASED ON STATE
 def make_supervisor_node():
-    llm = ChatAnthropic(model=CHAT_MODEL, temperature=0).with_structured_output(SupervisorRouter)
+    llm = get_chat_model(temperature=0).with_structured_output(SupervisorRouter)
 
     async def supervisor_node(state: NewsroomState) -> dict:
         step = state.get("step_count", 0) + 1
