@@ -28,7 +28,7 @@ Ingests a curated folder of news articles into a local vector store, then answer
 
 Every run is traced in LangSmith with full hierarchical spans for each agent and tool call. The same graph runs on Anthropic's direct API or AWS Bedrock with a one-line env var change (`MODEL_PROVIDER=bedrock`).
 
-![LangSmith trace tree showing 3-agent run on AWS Bedrock](docs/screenshots/langsmith_trace_aws_bedrock.png)
+![LangSmith trace tree showing 3-agent run on AWS Bedrock](docs/screenshots/langsmith_trace_aws_bedrock.png?v=2)
 
 The highlighted span confirms the supervisor swap is routing through Bedrock (`us.anthropic.claude-sonnet-4-6`). Visible in the trace: 82 seconds end-to-end, 54K tokens, $0.23 total cost across all four agent nodes.
 
