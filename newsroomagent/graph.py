@@ -1,5 +1,6 @@
 import asyncio
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_mcp_adapters.tools import load_mcp_tools
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain.agents import create_agent
@@ -20,11 +21,6 @@ MCP_CONFIG = {
     }
 }
 
-async def load_tools():
-    """SPAWN THE MCP SERVER AND RETURN ITS TOOLS AS LANGCHAIN BaseTool OBJECTS."""
-    client = MultiServerMCPClient(MCP_CONFIG)
-    tools = await client.get_tools()
-    return tools
 
 def filter_tools(tools, names):
     return [t for t in tools if t.name in names]
@@ -273,34 +269,37 @@ def build_graph(tools):
 # SMOKE TEST FOR MCP TOOL DISCOVERY
 if __name__ == "__main__":
     async def smoke():
-        tools = await load_tools()
-        print(f"LOADED {len(tools)} TOOLS FROM MCP SERVER.")
+        client = MultiServerMCPClient(MCP_CONFIG)
+        # PERSISTENT SESSION KEEPS ONE MCP SUBPROCESS ALIVE FOR THE WHOLE GRAPH RUN
+        async with client.session("newsroomagent") as session:
 
-        topic = "What elections happened in India in 2026?"
-        graph = build_graph(tools)
-        initial_state = {
-            "topic": topic,
-            "research_notes": "",
-            "fact_check_results": [],
-            "draft_script": "",
-            "next": "",
-            "step_count": 0,
-        }
+            tools = await load_mcp_tools(session)
+            print(f"LOADED {len(tools)} TOOLS FROM MCP SERVER.")
 
-        print(f"INVOKING GRAPH ON: {topic}\n")
-        final_state = await graph.ainvoke(initial_state)
+            topic = "What elections happened in India in 2026?"
+            graph = build_graph(tools)
+            initial_state = {
+                "topic": topic,
+                "research_notes": "",
+                "fact_check_results": [],
+                "draft_script": "",
+                "next": "",
+                "step_count": 0,
+            }
 
-        print("\n")
-        print(f"SUMMARY: {final_state['step_count']} supervisor turns")
-        print("\n")
-        verified = sum(1 for v in final_state["fact_check_results"] if v["verified"])
-        rejected = len(final_state["fact_check_results"]) - verified
-        print(f"fact-check: {verified} verified, {rejected} rejected")
+            print(f"INVOKING GRAPH ON: {topic}\n")
+            final_state = await graph.ainvoke(initial_state)
 
-        print("\n")
-        print("FINAL NEWS SCRIPT")
-        print("\n")
-        print(final_state["draft_script"])
+            print("\n")
+            print(f"SUMMARY: {final_state['step_count']} supervisor turns")
+            print("\n")
+            verified = sum(1 for v in final_state["fact_check_results"] if v["verified"])
+            rejected = len(final_state["fact_check_results"]) - verified
+            print(f"fact-check: {verified} verified, {rejected} rejected")
 
+            print("\n")
+            print("FINAL NEWS SCRIPT")
+            print("\n")
+            print(final_state["draft_script"])
 
     asyncio.run(smoke())
