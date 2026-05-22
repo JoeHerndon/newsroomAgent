@@ -9,9 +9,10 @@ Ingests a curated folder of news articles into a local vector store, then answer
 ## Stack
 
 - Python 3.12, uv
-- LangChain + LangGraph for the pipeline
+- LangChain + LangGraph for the multi-agent pipeline
 - Chroma for the vector store, Ollama (`nomic-embed-text`) for embeddings
-- Anthropic Claude (`claude-sonnet-4-6`) for generation
+- Pluggable LLM provider: Anthropic Claude direct API or AWS Bedrock (tied to `MODEL_PROVIDER` env var)
+- LangSmith for trace + cost + latency observability
 - FastAPI for the HTTP layer, FastMCP for the MCP server
 - Tavily for live web search
 
@@ -22,6 +23,14 @@ Ingests a curated folder of news articles into a local vector store, then answer
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
 - `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
+
+## Observability and provider pluggability
+
+Every run is traced in LangSmith with full hierarchical spans for each agent and tool call. The same graph runs on Anthropic's direct API or AWS Bedrock with a one-line env var change (`MODEL_PROVIDER=bedrock`).
+
+![LangSmith trace tree showing 3-agent run on AWS Bedrock](docs/screenshots/langsmith_trace_aws_bedrock.png)
+
+The highlighted span confirms the supervisor swap is routing through Bedrock (`us.anthropic.claude-sonnet-4-6`). Visible in the trace: 82 seconds end-to-end, 54K tokens, $0.23 total cost across all four agent nodes.
 
 ## Quickstart
 
@@ -83,4 +92,4 @@ for c in chunks:
 
 ## Status
 
-Active prototype. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search. Next: LangGraph multi-step research loop, evaluation harness for retrieval quality.
+Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing. Next: streaming output, extend FastAPI endpoint to run full multi-agent graph, create demo UI.
