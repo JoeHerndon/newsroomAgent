@@ -291,7 +291,24 @@ if __name__ == "__main__":
             }
 
             print(f"INVOKING GRAPH ON: {topic}\n")
-            final_state = await graph.ainvoke(initial_state)
+            
+            # BUILD UP final_state INCREMENTALLY TO BE STREAMED
+            final_state = dict(initial_state)
+            async for event in graph.astream(initial_state, stream_mode="updates"):
+                # EACH event IS A DICT: {node_name: state_delta_from_that_node}.
+                for node_name, delta in event.items():
+                    print(f"\n--- {node_name.upper()} COMPLETED ---")
+                    # MERGE THE DELTA INTO OUR RUNNING STATE FOR LATER PRINTING.
+                    final_state.update(delta)
+                    # PREVIEW WHAT THE NODE WROTE (TRUNCATE LONG STRINGS).
+                    for k, v in delta.items():
+                        if isinstance(v, str):
+                            preview = v[:200] + "..." if len(v) > 200 else v
+                            print(f"  {k}: {preview}")
+                        elif isinstance(v, list):
+                            print(f"  {k}: ({len(v)} items)")
+                        else:
+                            print(f"  {k}: {v}")
 
             print("\n")
             print(f"SUMMARY: {final_state['step_count']} supervisor turns")

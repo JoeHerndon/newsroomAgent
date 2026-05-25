@@ -92,4 +92,4 @@ for c in chunks:
 
 ## Status
 
-Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing. Next: streaming output, extend FastAPI endpoint to run full multi-agent graph, create demo UI.
+Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per node streaming in th CLI. Next: extend FastAPI endpoint to run full multi-agent graph, create demo UI.
