@@ -23,6 +23,7 @@ Ingests a curated folder of news articles into a local vector store, then answer
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
 - `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
+- `newsroomagent/api.py` serves a second FastAPI app that runs the full graph and streams each node's progress to the client over Server-Sent Events.
 
 ## Observability and provider pluggability
 
@@ -53,7 +54,21 @@ Smoke test of the compiled graph. Spawns the MCP server, hands the supervisor a 
 uv run python -m newsroomagent.graph
 ```
 
-### Option 2: HTTP API
+### Option 2: Streaming multi-agent API
+
+Runs the full supervisor graph and streams node-by-node progress to the
+client over SSE. Requires Ollama running for `archive_search`.
+
+```bash
+uv run uvicorn newsroomagent.api:app --reload
+```
+Then run curl below in a second terminal
+```
+curl -N -G "http://localhost:8000/stream" \
+  --data-urlencode "topic=What elections happened in India in 2026?"
+```
+
+### Option 3: Retrieval API (JSON)
 
 ```bash
 uv run uvicorn main:app --reload
@@ -67,7 +82,7 @@ curl -X POST http://127.0.0.1:8000/research \
   -d '{"topic":"What recent elections happened?","k":3}'
 ```
 
-### Option 3: MCP server
+### Option 4: MCP server
 
 Runs over stdio for use with an MCP client:
 
@@ -77,7 +92,7 @@ uv run python -m newsroomagent.mcp_server
 
 Requires `TAVILY_API_KEY` in the environment for `web_search`.
 
-### Option 4: Retrieval via REPL
+### Option 5: Retrieval via REPL
 
 ```bash
 uv run python
@@ -92,4 +107,4 @@ for c in chunks:
 
 ## Status
 
-Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per node streaming in th CLI. Next: extend FastAPI endpoint to run full multi-agent graph, create demo UI.
+Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per node streaming in the CLI over SSE HTTP endpoint. Next: create demo UI.
