@@ -1,13 +1,15 @@
 import json
 from fastapi import FastAPI
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, FileResponse
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_mcp_adapters.tools import load_mcp_tools
+from pathlib import Path
 
 from newsroomagent.graph import MCP_CONFIG, build_graph
 
 
 app = FastAPI(title="NewsroomAgent")
+FRONTEND_DIR = Path(__file__).parent / "frontend"
 
 # FRAME GENERATOR
 async def run_stream(topic: str):
@@ -42,3 +44,7 @@ async def run_stream(topic: str):
 async def stream(topic: str):
     # SSE STREAM.
     return StreamingResponse(run_stream(topic), media_type="text/event-stream")
+
+@app.get("/")
+async def index():
+    return FileResponse(FRONTEND_DIR / "index.html")
