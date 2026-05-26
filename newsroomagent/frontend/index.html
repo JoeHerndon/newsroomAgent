@@ -18,5 +18,48 @@
     <h2>Script</h2>
     <pre id="script"></pre>
 
+    <script>
+        const topicInput = document.getElementById("topic");
+        const runButton = document.getElementById("run");
+        const log = document.getElementById("log");
+        const scriptOut = document.getElementById("script");
+
+        let eventSource = null;
+
+        runButton.onclick = () => {
+            const topic = topicInput.value.trim();
+            if (!topic) return;
+
+            // CLOSE ANY OLD STREAM FOR A CLEAN SLATE
+            if (eventSource) eventSource.close();
+            log.innerHTML = "";
+            scriptOut.textContent = "";
+
+            // OPEN THE STREAM. encodeURIComponent KEEPS SPACES AND ? FROM BREAKING THE URL.
+            eventSource = new EventSource(`/stream?topic=${encodeURIComponent(topic)}`);
+
+            // FIRES ONCE PER data
+            eventSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+
+                // LOOKS FOR FINAL FRAME AND STOPS LISTENING.
+                if (data.done) {
+                    scriptOut.textContent = data.script;
+                    eventSource.close();
+                    return;
+                }
+
+                // OTHERWISE NODE PROGRESS FRAME GETS ADDED TO LOG.
+                const li = document.createElement("li");
+                li.textContent = `step ${data.step}: ${data.node}`;
+                log.appendChild(li);
+            };
+
+            eventSource.onerror = () => {
+                if (eventSource) eventSource.close();
+            };
+        };
+    </script>
+
 </body>
 </html>
