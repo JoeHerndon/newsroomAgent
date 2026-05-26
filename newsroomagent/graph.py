@@ -59,8 +59,11 @@ def make_researcher_node(tools):
                 f"Here are your research notes from the last pass:\n{state['research_notes']}\n"
                 f"A fact-checker rejected ONLY these claims:\n{rejected_list}\n"
                 "Return an updated version of the notes. Keep every verified claim exactly as it is. "
-                "Fix or replace only the rejected claims, verifying the corrections against the archive." \
+                "For each rejected claim, search the archive again and correct it to match what the archive actually says. "
+                "Do not fabricate."
                 "If the archive cannot support a rejected claim, remove it entirely and do not mention the gap"
+                "Also search the archive for additional facts about the topic that it directly supports, "
+                "and add them. Never add anything the archive does not confirm."
             )
         else:
             content = f"Research this topic: {state['topic']}"
@@ -135,24 +138,25 @@ def make_factchecker_node(tools):
 
 # WRITER
 WRITER_PROMPT = """You are a news writer creating a news story segment.
-You will receive the topic from the user, esearch notes from a researcher and
-fact checked verdicts on the key claims.
+You will receive the topic and a list of fact-checked, verified facts.
 
-Your job is to write a brief and clear news script (about 400 words max) 
-covering the verified information.
+Your job is to write a brief and clear news script (about 400 words max)
+using only those verified facts.
 
 RULES:
-1. Use ONLY claims marked VERIFIED in the fact-check report.
-2. If a key fact was REJECTED, skip it.
+1. Use ONLY the verified facts provided. Do not add anything from your own
+   knowledge, even if you are certain it is true.
+2. Do not speculate, do not compare to other places or events, and do not add
+   background or context that is not in the verified facts.
 3. Write in news-anchor style: neutral and factual.
 4. No filler, no editorializing, no "in conclusion."
 5. End with a one-line attribution: "Source: NewsroomAgent archive."
 
-Structure: a lede paragraph with the most important fact, then 2-4 supporting paragraphs."""
+Structure: a lede paragraph with the most important fact, then supporting paragraphs."""
 
 
 def make_writer_node():
-    llm = get_chat_model(temperature=0.3)
+    llm = get_chat_model(temperature=0)
 
     async def writer_node(state: NewsroomState) -> dict:
         # FORMAT FACT-CHECK RESULTS AS A LABELED LIST FOR THE LLM TO REFERENCE.
@@ -164,7 +168,6 @@ def make_writer_node():
 
         user_msg = (
             f"Topic: {state['topic']}\n\n"
-            f"Research notes:\n{state['research_notes']}\n\n"
             f"Fact-check verdicts:\n{fc_summary}\n\n"
             "Write the news segment script now."
         )
@@ -178,7 +181,8 @@ def make_writer_node():
     return writer_node
 
 # SUPERVISOR/ ROUTER
-MAX_STEPS = 6
+MAX_STEPS = 7
+MIN_VERIFIED = 3
 
 class SupervisorRouter(BaseModel):
     next: Literal["researcher", "factchecker", "writer", "FINISH"] = Field(
@@ -214,21 +218,23 @@ def make_supervisor_node():
 
     async def supervisor_node(state: NewsroomState) -> dict:
         step = state.get("step_count", 0) + 1
-
-        # STEP BUDGET GUARD. RUN BEFORE INVOKING LLM
-        if step >= MAX_STEPS:
-            if state.get("research_notes"):
-                print(f"  [supervisor step {step}] BUDGET EXCEEDED, FORCING WRITER")
-                return {"next": "writer", "step_count": step, "reason": "budget exceeded, forcing writer"}
-            print(f"  [supervisor step {step}] BUDGET EXCEEDED WITH NO NOTES, FORCING FINISH")
-            return {"next": "FINISH", "step_count": step, "reason": "budget exceeded with no notes, forcing finish"}
-
         fc_results = state.get("fact_check_results", []) or []
         verified = sum(v["verified"] for v in fc_results)
         rejected = len(fc_results) - verified
         total = len(fc_results)
         rejection_rate = rejected / total if total else 0
         over_threshold = rejection_rate > 0.10
+
+        # STEP BUDGET GUARD. RUN BEFORE INVOKING LLM
+        if step >= MAX_STEPS:
+            if verified >= MIN_VERIFIED:
+                print(f"  [supervisor step {step}] BUDGET EXCEEDED, FORCING WRITER WITH {verified} VERIFIED CLAIMS")
+                return {"next": "writer", "step_count": step, "reason": "budget exceeded, forcing writer"}
+            print(f"  [supervisor step {step}] BUDGET EXCEEDED WITH ONLY {verified} VERIFIED CLAIMS, FORCING FINISH")
+            return {"next": "FINISH", "step_count": step, "reason": f"{verified} verified claims not enough to write a story",
+                    "draft_script": "Not enough verified facts in the archive to write a story on this topic."}
+
+
 
         prompt = SUPERVISOR_PROMPT.format(
             topic=state.get("topic", ""),

@@ -55,7 +55,7 @@ def preview_change(change):
             verified = sum(1 for x in v if x.get("verified"))
             preview[k] = f"{len(v)} claims, {verified} verified, {len(v) - verified} rejected"
         elif isinstance(v, str):
-            preview[k] = v[:200] + "..." if len(v) > 200 else v
+            preview[k] = v[:400] + "..." if len(v) > 400 else v
         elif isinstance(v, list):
             preview[k] = f"({len(v)} items)"
         else:
