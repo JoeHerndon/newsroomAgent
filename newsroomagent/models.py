@@ -17,3 +17,5 @@ class NewsroomState(TypedDict):
 
     # INCREMENTS EACH TIME WE ENTER THE SUPERVISOR.
     step_count: int
+
+    reason: str

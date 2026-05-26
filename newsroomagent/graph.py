@@ -205,9 +205,9 @@ def make_supervisor_node():
         if step >= MAX_STEPS:
             if state.get("research_notes"):
                 print(f"  [supervisor step {step}] BUDGET EXCEEDED, FORCING WRITER")
-                return {"next": "writer", "step_count": step}
+                return {"next": "writer", "step_count": step, "reason": "budget exceeded, forcing writer"}
             print(f"  [supervisor step {step}] BUDGET EXCEEDED WITH NO NOTES, FORCING FINISH")
-            return {"next": "FINISH", "step_count": step}
+            return {"next": "FINISH", "step_count": step, "reason": "budget exceeded with no notes, forcing finish"}
 
         fc_results = state.get("fact_check_results", []) or []
         verified = sum(v["verified"] for v in fc_results)
@@ -227,7 +227,7 @@ def make_supervisor_node():
         decision = await llm.ainvoke(prompt)
         print(f"  [supervisor step {step}] -> {decision.next} ({decision.reason})")
 
-        return {"next": decision.next, "step_count": step}
+        return {"next": decision.next, "step_count": step, "reason": decision.reason}
 
     return supervisor_node
 

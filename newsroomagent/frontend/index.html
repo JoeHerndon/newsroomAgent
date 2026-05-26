@@ -63,7 +63,20 @@
 
                 // OTHERWISE NODE PROGRESS FRAME GETS ADDED TO LOG.
                 const li = document.createElement("li");
-                li.textContent = `step ${data.step}: ${data.node}`;
+                // HEADER
+                const header = document.createElement("strong");
+                header.textContent = `step ${data.step}: ${data.node}`;
+                li.appendChild(header);
+
+                // ONE LINE PER FIELD THE NODE CHANGED, MATCHES CLI OUTPUT
+                for (const [key, value] of Object.entries(data.changes || {})) {
+                    const detail = document.createElement("div");
+                    detail.style.marginLeft = "1.5rem";
+                    detail.style.whiteSpace = "pre-wrap";
+                    detail.textContent = `${key}: ${value}`;
+                    li.appendChild(detail);
+                }
+
                 log.appendChild(li);
             };
 

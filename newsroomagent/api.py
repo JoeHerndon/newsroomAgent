@@ -34,11 +34,31 @@ async def run_stream(topic: str):
         async for event in graph.astream(initial_state, stream_mode="updates"):
             for node_name, delta in event.items():
                 final_state.update(delta)
-                payload = {"node": node_name, "step": final_state["step_count"]}
+                payload = {
+                    "node": node_name,
+                    "step": final_state["step_count"],
+                    "changes": preview_change(delta),
+                }
                 yield f"data: {json.dumps(payload)}\n\n"
 
         done = {"done": True, "script": final_state["draft_script"]}
         yield f"data: {json.dumps(done)}\n\n"
+
+def preview_change(change):
+    # SAME SHAPE AS THE CLI STREAM. WILL SHOW EVERY FIELD THE NODE CHANGED.
+    preview = {}
+    for k, v in change.items():
+        if k == "fact_check_results":
+            verified = sum(1 for x in v if x.get("verified"))
+            preview[k] = f"{len(v)} claims, {verified} verified, {len(v) - verified} rejected"
+        elif isinstance(v, str):
+            preview[k] = v[:200] + "..." if len(v) > 200 else v
+        elif isinstance(v, list):
+            preview[k] = f"({len(v)} items)"
+        else:
+            preview[k] = v
+    return preview
+
 
 @app.get("/stream")
 async def stream(topic: str):
