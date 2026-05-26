@@ -23,7 +23,7 @@ Ingests a curated folder of news articles into a local vector store, then answer
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
 - `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
-- `newsroomagent/api.py` serves a second FastAPI app that runs the full graph and streams each node's progress to the client over Server-Sent Events.
+- `newsroomagent/api.py` serves a second FastAPI app that runs the full graph and streams each node's progress to the client over Server-Sent Events. It also serves a small browser UI (`newsroomagent/frontend/index.html`) at `/` that consumes that stream and shows live progress plus the final script.
 
 ## Observability and provider pluggability
 
@@ -54,16 +54,23 @@ Smoke test of the compiled graph. Spawns the MCP server, hands the supervisor a 
 uv run python -m newsroomagent.graph
 ```
 
-### Option 2: Streaming multi-agent API
+### Option 2: Streaming multi-agent API + browser demo
 
-Runs the full supervisor graph and streams node-by-node progress to the
-client over SSE. Requires Ollama running for `archive_search`.
+Runs the full supervisor graph and streams node-by-node progress over SSE.
+Requires Ollama running for `archive_search`.
 
 ```bash
 uv run uvicorn newsroomagent.api:app --reload
 ```
-Then run curl below in a second terminal
-```
+
+Then open `http://localhost:8000/` in a browser, enter a topic, and watch the
+researcher, fact-checker, and writer report progress live before the final
+script appears.
+
+Prefer the raw stream? Hit the endpoint directly with curl in a second terminal
+
+
+```bash
 curl -N -G "http://localhost:8000/stream" \
   --data-urlencode "topic=What elections happened in India in 2026?"
 ```
@@ -107,4 +114,4 @@ for c in chunks:
 
 ## Status
 
-Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per node streaming in the CLI over SSE HTTP endpoint. Next: create demo UI.
+Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per-node streaming both in the CLI and over an SSE HTTP endpoint, and a browser demo UI that visualizes the pipeline live. Next: demo video to be added to the README.
