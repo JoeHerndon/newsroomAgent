@@ -49,13 +49,27 @@ def make_researcher_node(tools):
     agent = create_agent(llm, research_tools, system_prompt=RESEARCHER_PROMPT)
 
     async def researcher_node(state: NewsroomState) -> dict:
-        # START AGENT LOOP WITH. FEED USER'S PROMPT
-        result = await agent.ainvoke({
-            "messages": [HumanMessage(content=f"Research this topic: {state['topic']}")]
-        })
+        #GRAB REJECTED VERDICTS FROM LAST PASS
+        rejected = [v for v in state.get("fact_check_results", []) if not v["verified"]]
+
+        if rejected:
+            # KEEP GOOD CLAIMS. ONLY TOUCH REJECTED ONES.
+            rejected_list = "\n".join(f"- {v['claim']} ({v['evidence']})" for v in rejected)
+            content = (
+                f"Here are your research notes from the last pass:\n{state['research_notes']}\n"
+                f"A fact-checker rejected ONLY these claims:\n{rejected_list}\n"
+                "Return an updated version of the notes. Keep every verified claim exactly as it is. "
+                "Fix or replace only the rejected claims, verifying the corrections against the archive." \
+                "If the archive cannot support a rejected claim, remove it entirely and do not mention the gap"
+            )
+        else:
+            content = f"Research this topic: {state['topic']}"
+
+        result = await agent.ainvoke({"messages": [HumanMessage(content=content)]})
+
         # THE LAST MESSAGE IS THE LLM'S FINAL TEXT REPLY AFTER ALL TOOL CALLS FINISHED.
         notes = result["messages"][-1].content
-        return {"research_notes": notes}
+        return {"research_notes": notes, "fact_check_results": []}
 
     return researcher_node
 
@@ -181,9 +195,8 @@ Your team:
 Routing rules:
 1. If research_notes is empty, route to researcher.
 2. If research_notes exists but fact-check results are empty, route to factchecker.
-3. If more than 10% of claims were REJECTED, route back to researcher for another pass.
-4. If most claims are VERIFIED, route to writer.
-5. Choose FINISH after the writer has produced the draft_script.
+3. If rejection_over_threshold is True, route back to researcher for another pass. Print percent of rejected claims
+4. Choose FINISH after the writer has produced the draft_script.
 
 # STATE SNAPSHOT
 Current state:
@@ -192,6 +205,7 @@ Current state:
 - fact-check results: {fc_count} total ({verified_count} verified, {rejected_count} rejected)
 - has draft_script: {has_draft}
 - step_count: {step_count} / {max_steps}
+- rejection_over_threshold: {over_threshold}
 """
 
 # SUPERVISOR NODE. ROUTES BETWEEN AGENTS BASED ON STATE
@@ -212,6 +226,9 @@ def make_supervisor_node():
         fc_results = state.get("fact_check_results", []) or []
         verified = sum(v["verified"] for v in fc_results)
         rejected = len(fc_results) - verified
+        total = len(fc_results)
+        rejection_rate = rejected / total if total else 0
+        over_threshold = rejection_rate > 0.10
 
         prompt = SUPERVISOR_PROMPT.format(
             topic=state.get("topic", ""),
@@ -222,6 +239,7 @@ def make_supervisor_node():
             has_draft=bool(state.get("draft_script")),
             step_count=step,
             max_steps=MAX_STEPS,
+            over_threshold=over_threshold
         )
 
         decision = await llm.ainvoke(prompt)

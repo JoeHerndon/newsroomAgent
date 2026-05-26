@@ -49,6 +49,9 @@ def preview_change(change):
     preview = {}
     for k, v in change.items():
         if k == "fact_check_results":
+            # SKIP THE EMPTY RESET THE RESEARCHER PUSHES
+            if not v:
+                continue
             verified = sum(1 for x in v if x.get("verified"))
             preview[k] = f"{len(v)} claims, {verified} verified, {len(v) - verified} rejected"
         elif isinstance(v, str):
