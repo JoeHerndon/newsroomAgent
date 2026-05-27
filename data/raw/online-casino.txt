@@ -1,0 +1,144 @@
+Online casinos, also known as virtual casinos or Internet casinos, are online versions of traditional ("brick and mortar") casinos. Online casinos enable gamblers to play and wager on casino games through the Internet. It is a prolific form of online gambling.
+Some online casinos claim higher payback percentages for slot machine games, and some publish payout percentage audits on their websites. Assuming that the online casino is using an appropriately programmed random number generator, table games like blackjack have an established house edge. The payout percentage for these games are established by the rules of the game.
+
+
+== Types ==
+Online casinos are broadly divided into two categories based on the software they use: web-based and download-only casinos. Traditionally, online casinos would include only one of the two platforms. However, with advanced technological changes, an online casino can now accommodate both.
+
+
+=== Web-based ===
+Web-based online casinos (also known as no-download casinos) are websites where users may play casino games without downloading software to their local computer. Most online casinos allow gameplay through an HTML interface, previously this was done through browser plugins, such as Flash Player, Shockwave Player, or Java.
+
+
+=== Download-based ===
+Download-based online casinos require the download of the software client in order to play and wager on the casino games offered. The online casino software connects to the casino service provider and handles contact without browser support. Download-based online casinos generally run faster than web-based online casinos since the graphics and sound programs are cached by the software client, rather than having to be loaded from the Internet. On the other hand, the initial download and installation of the casino's software take time. As with any download from the Internet, the risk of the program containing malware exists, which makes it less popular among skeptical casino players.
+
+
+=== App-based ===
+App-based casinos are digital platforms that allow users to engage in gambling activities via applications on smartphones, tablets, and other mobile devices. These casinos provide a wide array of gambling options, including slot machines, table games, and live dealer games, all optimized for mobile play. The rise of app-based casinos reflects the increasing reliance on mobile technology and the demand for accessible, on-the-go entertainment options. They operate under various jurisdictions, requiring adherence to strict regulatory standards to ensure fairness, security, and responsible gambling.
+
+
+== Games ==
+
+
+=== Virtual ===
+Also known as software-based online casino games, the outcome of these games is determined using a pseudorandom number generator (PRNG) software. This software ensures that every deal of the card, the outcome of a dice throw, or the results produced by the spinning of a slot machine or roulette wheel is totally random and unpredictable. PRNGs use a set of mathematical instructions known as an algorithm to generate a long stream of numbers that give the impression of true randomness. While this is not the same as true random number generation (computers are incapable of this without an external input source), it provides results that satisfy all but the most stringent requirements for true randomness.
+When implemented correctly, a PRNG algorithm such as the Mersenne Twister will ensure that the games are both fair and unpredictable. However, usually, the player has to trust that the software has not been rigged to increase the house edge, as its inner workings are invisible to the user. Properly regulated online casinos are audited externally by independent regulators to ensure that their win percentages are in line with the stated odds, and this can provide a degree of assurance to the player that the games are fair, assuming the player trusts the regulator.
+
+
+=== Live dealer ===
+Live dealer casino games are the complete opposite of software-based games. Instead of depending on software to determine the outcome of the roulette spin, dice throw, or deal of a card, these games depend on real-time results. This is possible as the games are streamed in real-time from a land-based casino or a studio recreated to mimic a land-based casino.
+To ensure that players have an easy time playing these games and that the land-based environment is fully recreated, software developers include innovative features such as the chat feature. This enables the player to type a message to the dealer and they can respond back verbally. The live chat feature can also be used to communicate with other players seated at the table following a set of rules laid down by the casino.
+The results of the physical transactions by the dealer, such as the outcome of the roulette wheel spin or the dealing of cards, are translated into data that can be utilized by the software by means of optical character recognition (OCR) technology. This enables the player to interact with the game in much the same way as they would with a virtual casino game, except for the fact that the results are determined by real-life actions rather than automated processes.
+These games are a lot more expensive for websites to host than virtual games, as they involve a heavier investment in technology and staffing. A live casino studio typically employs one or more cameramen, several croupiers running the various games, an information technology manager to ensure that any technical hitches are dealt with swiftly, and a pit boss that acts as an adjudicator in case of disputes between players and croupiers.
+In most cases, this requires at least a three-room setup, comprising a live studio, a server/software room, and an analyst’s room. The configuration of these rooms varies from casino to casino, with some having several gaming tables in one room, and some having a single table in each room.
+The high running costs involved with operating live dealer games is the reason why online casinos only tend to offer a handful of the most popular games in this format, such as roulette, blackjack, sic bo, and  baccarat. In comparison, the running costs associated with virtual games are very low, and it is not uncommon for online casinos to offer hundreds of different virtual casino games to players on their site.
+Online casinos vary in their approach to the hosting of live games, with some providing live games via their own television channel, and others offering the games exclusively via their website. In the case of televised games, players can often use their mobile phone or television remote controls to place bets instead of doing so via a computer connected to the internet. The most common live dealer games offered at online casinos are baccarat, blackjack, and roulette.
+
+
+=== Examples ===
+A typical selection of gambling games offered at an online casino might include:
+
+Baccarat
+Blackjack
+Craps
+Roulette
+Sic bo
+Slot machines
+Poker
+Keno
+Bingo
+
+
+== Bonuses ==
+Many online casinos offer sign-up bonuses to new players making their first deposit, and often on subsequent play as well. These bonuses are a form of marketing that may incur a cost (potentially justifiable in order to attract a new player who may return and deposit many more times), since the casino is essentially giving away money in return for a commitment from the player to wager a certain minimum amount before they are allowed to withdraw. Since all casino games have a house edge, the wagering requirements ensure that the player cannot simply walk away with the casino's money immediately after claiming the bonus. These wagering requirements are commonly set to be sufficiently high that the player has a negative expectation, exactly as if they had deposited and not claimed a bonus.
+Casinos may choose to restrict certain games from fulfilling the wagering requirements, either to restrict players from playing low-edge games or to restrict 'risk-free' play (betting for instance both red and black on roulette), thereby completing the wagering requirement with a guaranteed profit after the bonus is taken into account.
+
+
+=== Welcome ===
+The Welcome bonus is a deposit match bonus on the first deposit ever made in the casino or casino group. Welcome bonuses sometimes come in packages and may be given to match the first two or three deposits (First Deposit Welcome Bonus, Second Deposit Welcome Bonus, etc.). They can also be tied to specific games, such as the Welcome Slots Bonus or the Welcome Table Games Bonus. The casino may also offer Welcome bonuses for high rollers who make an initial deposit above the standard amount limit.
+
+
+=== Referral ===
+There are two types of Referral bonuses: one for the Referee and one for the Referrer. The Referee gets a bonus when he or she registers an account at the casino and mentions the Referrer. The Referrer gets a bonus when the Referee completes all the requirements, such as making the deposit and wagering it a certain number of times.
+
+
+=== Cashback or insurance ===
+Cashback or Insurance bonuses are offered as a percentage of all losses in the player’s previous gaming activity. Typically, only deposits that were not matched with bonuses count towards this bonus. There are also websites that offer casino cashback payments based on losses encountered while playing with one or more online casinos. Those types of cashback deals are usually paid back to players by the casino portal that offers those special cashback offers.
+
+
+=== No-deposit ===
+The most popular form of bonus is one that can be claimed without the need to deposit any of the player's own money - known as a no deposit bonus. These bonuses are used as acquisition tools by casinos wishing to attract new players. No deposit bonuses don't always take the form of real cash, as exemplified below.
+
+
+=== Non-cashable ===
+Non-cashable bonuses may be called "sticky" or "phantom" bonuses. In both cases, the bonus forms a part of the player's balance, but cannot be cashed out. The difference between cash-able and phantom bonuses comes at cashout time. A phantom bonus is deducted from the player's balance at the moment he places his withdrawal request. For example: if a player deposited $100, received $100, played, and finished the wagering at $150. If the bonus is sticky, the player will be able to withdraw just $50. If the bonus is cash-able, then the whole balance is available for withdrawal.
+
+
+=== Comp points ===
+
+Comps are commonly available at land-based casinos, but also exist online. Comp points can usually be exchanged for cash, prizes, or other comps. The amount of cash given per wager is usually very small and often varies with game selection.  A casino might offer three comp points for each $10 wagered on slots and one comp point for each $10 wagered on blackjack.  The casino might give $1 for each 100 comp points.  This example is equivalent to returning 0.3% of wagers on slots and 0.1% of wagers on blackjack. In addition, online casinos may offer comps such as free tickets to online tournaments, free slots online, tickets to other special events, extra bonuses, souvenirs, and payback.
+
+
+=== Hunting ===
+Bonus hunting (also known as bonus bagging or bonus whoring) is a type of advantage gambling where turning a profit from casino, sportsbook and poker room bonus situations is mathematically possible. For example, the house edge in blackjack is roughly 0.5%. If a player is offered a $100 cashable bonus requiring $5000 in wagering on blackjack with a house edge of 0.5%, the expected loss is $25. Therefore, the player has an expected gain of $75 after claiming the $100 bonus.
+
+
+=== Disputes ===
+A large portion of online casino disputes relates to bonuses. Casinos may label players who win using bonuses as "bonus abusers."  Both players and casinos may commit fraud.  An example of player fraud is creating multiple accounts and using the accounts to claim a sign-up bonus several times.  An example of casino fraud is changing terms of a bonus after a player has completed the wagering requirements, then requiring the player to meet the new bonus terms.
+
+
+== Legality ==
+Online gambling legislation often has loopholes that result from the rapid development of the technology underpinning the development of the industry. Some countries, including Belgium, Canada, Finland, Sweden and Poland have state gambling monopolies and do not grant licenses to foreign casino operators. According to their law, operators licensed on the territory of these countries can only be considered legal. At the same time, they can't prosecute foreign casino operators and only block their sites. Players in these countries can't be punished and can gamble at any site they can access.
+
+
+=== Australia ===
+The Australian Interactive Gambling Act 2001 (IGA) criminalizes the supply of online casino games by an operator anywhere in the world to persons located in Australia. It only targets operators of online gambling sites, resulting in the curious situation that it is not illegal for a player in Australia to access and gamble at an online casino. No operator has even been charged with an offense under the IGA and many online casinos accept Australian customers. In June 2016, the South Australian Government became the first state or territory in the world to introduce a 15% Place Of Consumption Tax (POCT) modeled on the 2014 UK POCT.
+
+
+=== Belgium ===
+The Belgian Gaming Act went into effect in January 2011 and allows online gambling, but only under very strict conditions and surveillance.
+As of 2024, Belgium enforces a strict gambling regulatory framework managed by the Belgian Gaming Commission. This framework covers both land-based and online gambling, with a focus on licensing, consumer protection, and responsible gambling practices. Online operators must collaborate with land-based casinos to operate legally, and Belgium employs a "white list" for approved sites and a "black list" for unauthorized ones to control online gambling. The commission ensures operators comply with laws designed to balance gambling opportunities with the prevention of gambling-related issues.
+
+
+=== Canada ===
+The Canadian criminal code states that only provincial governments and charitable organizations licensed by provincial governments may operate a casino in Canada. It also prohibits residents from participating in any lottery scheme, the game of chance, or gambling activity not licensed or operated by a provincial government. 
+In the 2010s, provincial lottery and gaming boards began to gradually launch online casinos, intended to attract business away from unregulated services that are not licensed to operate in Canada. The British Columbia Lottery Corporation (BCLC) launched internet gaming via their PlayNow.com service in 2010, becoming the first legal online casino in Canada. Loto-Québec launched a similar service known as Espacejeux, Manitoba partnered with the BCLC to launch a localized version of PlayNow in 2013, the Ontario Lottery and Gaming Corporation (OLG) launched PlayOLG in 2015,  Alberta launched Play Alberta in 2020, and the Atlantic Lottery Corporation began to launch an online casino in Atlantic Canada the same year. 
+In 2021, Saskatchewan reached an agreement granting the Federation of Sovereign Indigenous Nations (FSIN) exclusive rights to operate an online casino in the province, initially under a five-year agreement. The venture is in partnership with Saskatchewan's tribal gaming operator SIGA (which operates the service as an extension of its physical casino operations) and the Crown corporation Sask Gaming, with SIGA partnering with the BCLC to run the service as a localized version of PlayNow.
+In April 2022, Ontario began to license third-party online gambling operators to do business in the province in a regulated market. In 2025, Alberta passed legislation allowing for a similar regulated market, which will begin in July 2026.
+The Kahnawake First Nation in Quebec has operated its own gaming commission since 1996 under the Kahnawake Gaming Law. It has asserted jurisdiction to enact the law as part of Mohawk or "aboriginal rights" that have existed since time immemorial, most recently recognized and affirmed in subsection 35(1) of Canada's Constitution Act, 1982. As of 2010, it had licensed and hosted nearly 350 gambling websites, and its activities had never been challenged under the laws of Canada or any other jurisdiction. 
+
+
+=== Germany ===
+A German state contract about gambling (German: Glücksspielstaatsvertrag) between all 16 German states was ratified in 2008 and has been adopted in 2012. It regulates restrictive handling of online-gambling, including a basic state monopoly on public gambling with limited exceptions for a few commercial providers. Online gambling, and other forms of public gambling, against these regulations is illegal in Germany. The state contract, its implementation in contrast to the more lenient EU legislation, and possible further changes have been controversially discussed in the public, politics, and courts.
+
+
+=== India ===
+Online gambling is illegal in the state of Maharashtra under the "Bombay Wager Act". The most recent law to address gambling online was the Federal Information Technology Rules where such illegal activities may be blocked by Internet providers within India. Another act is the Public Gaming Act of 1867. However, the Act makes no specific mention of “online casinos.” States tend to operate on their own authority. Online casinos active in India are run by international operators.
+Online gambling legal issues in India are complicated in nature as Gambling in India is regulated by different states laws and online gambling is a central subject. To ascertain the position of Indian government, the Supreme Court of India sought the opinion of central government in this regard but the same was declined by the central government. This has made playing of online cards games like rummy, poker, etc. legally risky.
+
+
+=== United Kingdom ===
+In the United Kingdom, the Gambling Act 2005 governs all matters of online gambling, permitting online betting sites to have a Remote Gambling Licence in order to offer online betting to UK citizens. In 2014, the UK government put into law the Gambling Act of 2014 which in addition to the original 2005 law, required offshore online gambling operators catering to UK players to obtain a UK license. The new regulation required operators to pay a 15% Place of Consumption Tax (POCT), something that triggered an exodus of sorts of some operators from the UK Isles. However, this exodus did not last long in most cases as the benefits outweighed the stumbling blocks, due to the UK being a major market for online gambling.
+In 2019 the United Kingdom Gambling Commission (UKGC) announced a series of new measures that apply to online and mobile casinos to reduce underage gambling with the aim of increasing fairness and transparency. The new measures will require casinos to have users verify their identity and age in order to gamble.
+
+
+=== Spain ===
+As of 2024, gambling in Spain is legal and regulated under the Spanish Gambling Act of 2011, which oversees both online and offline gambling activities. This legislation requires operators to obtain a license from the Directorate General for the Regulation of Gambling (DGOJ) to offer services. The law emphasizes responsible gambling, including age verification and self-exclusion programs. While national regulations provide a general framework, some Spanish regions may impose additional rules, reflecting the country's decentralized governance. Gambling winnings are subject to taxation, with conditions varying by the amount and type of game.
+
+
+=== Argentina ===
+As of 2024, gambling regulation in Argentina is primarily managed at the provincial level, with each of the 23 provinces and the autonomous city of Buenos Aires setting their own rules. This results in diverse gambling laws across the country. While national oversight exists for taxation and interstate gambling, there's no unified federal regulation for online gambling, leaving it up to each province. Operators must obtain local licenses and follow regional guidelines, including responsible gambling measures. The decentralized system aims to protect consumers, address problem gambling, and support local economies through gambling taxes.
+
+
+=== United States ===
+In the United States, the legality of online gambling is debated and can vary from state to state. The Unlawful Internet Gambling Enforcement Act of 2006 (UIGEA) limits the ability of banks and payment processors to transact with internet gambling sites that are unlawful under any federal or state law. However, it does not define the legality or otherwise of an internet-based gambling site. It was commonly assumed that the Federal Wire Act prohibited all forms of online gambling. However, in December 2011, the United States Department of Justice released a statement clarifying that the Wire Act applied only to sports betting sites and not to online casinos, poker, or lottery sites, leaving the definition of legality up to individual states. Certain states such as Nevada, Delaware, and New Jersey have started the process of legalizing and regulating online gambling and it is expected that regulation will continue on a state by state basis.
+
+
+== See also ==
+Problem gambling
+eCOGRA
+Online gambling
+
+
+== Notes ==

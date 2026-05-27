@@ -76,6 +76,10 @@ In January 2026, the court granted a temporary restraining order, followed by a 
 In response to a March 2024 lawsuit accusing Nvidia of training LLMs on data from a shadow library the company disputed the characterization of Anna's Archive and other repositories as "shadow libraries", despite Anna's own use of the term. In January 2026, additional evidence was presented in the case suggesting that Nvidia also directly contacted Anna's Archive in order to gain high-speed access to its data. Anna's Archive denied ever dealing with Nvidia directly, and raised the possibility that Nvidia used an intermediary party to avoid legal issues. On January 29, 2026, Nvidia filed a motion to dismiss the lawsuit. According to TorrentFreak, the company described the plaintiffs' allegations as 'speculative, vague, and legally insufficient.'
 
 
+==== March 2026 publishers lawsuit ====
+Following a lawsuit brought in March 2026 by a group of 13 publishers, on 19 May 2026, U.S. District Court for the Southern District of New York issued a default judgment ordering the website to immediately cease copying and distributing millions of files that it had illegally downloaded.  The publishers were awarded a $19.5 million default judgment, and the judge ordered a global domain takedown.   
+
+
 === Italy ===
 In January 2024, Italy's national communications agency ordered major internet service providers (ISPs) in the country to block Anna's Archive due to a copyright complaint by the Italian Publishers Association. An investigation by the Digital Services Directorate confirmed the presence of copyrighted works on the site and found that some of its servers were likely owned by a Ukrainian hosting provider, but failed to uncover the identity of its operators.
 

@@ -1,0 +1,129 @@
+Mycobacterium bovis is a slow-growing (16- to 20-hour generation time) aerobic bacterium and the causative agent of tuberculosis in cattle (known as bovine TB). It is related to Mycobacterium tuberculosis, the bacterium which causes tuberculosis in humans. M. bovis can jump the species barrier and cause tuberculosis-like infection in humans and other mammals.
+
+
+== Bacterium morphology and staining ==
+The bacteria are curved or straight rods. They sometimes form filaments, which fragment into bacilli or cocci once disturbed. In tissues, they form slender rods, straight or curved, or club-shaped.
+Short, relatively plump bacilli (rods) are seen in tissue smears, and large slender beaded rods in culture. They have no flagella or fimbria, and no capsule.
+Mycobacterium tuberculosis group bacteria are 1.0–4.0 μm long by 0.2–0.3 μm wide in tissues. In culture, they may appear as cocci, or as bacilli up to 6–8 μm long.
+The bacteria stain Gram-positive, acid-fast. The cell wall contains as high as 60% lipid, giving the mycobacteria their hydrophobic characteristics, slow growth, and resistance to desiccation, disinfectants, acids, and antibodies. (Mycobacterium family). They are not easy to stain with aniline dyes; although they are Gram-positive, confirming this may be difficult. Ziehl–Neelsen staining results in stain pink with hot carbol fuscin and then resist decolourisation with 3% hydrochloric acid in 95% alcohol (i.e. they are acid-alcohol fast); following washing, the slide is counterstained with e.g. methylene blue.
+They are nonspore-forming.
+
+
+== Culture and biochemical features ==
+
+
+=== Growth requirements ===
+M. bovis is a facultative intracellular parasite. For in vitro growth, special culture media are required; for example, Dorset's egg medium incorporates egg yolk, phosphate buffer, magnesium salts, and sodium pyruvate; amino acids may be added, but glycerol is not included, as it is inhibitory.  Culture generally requires several weeks at 37 °C to reach colonies visible to the unaided human eye. It is strictly aerobic and grows at 37, but not at 25 °C. Optimal growth occurs at 37-38 °C. The species does not reduce nitrate or niacin, and is resistant to pyrazinamide. It is sensitive to thiophene-2-carboxylic acid hydrazide.
+
+
+=== Appearance of colonies ===
+Initially (after 3–4 weeks), its minute, dull flakes, begin to thicken to form dry, irregular masses standing high above the culture medium surface. Eventually, confluent growth is seen over the whole culture surface, forming a rough, waxy blanket, becoming thick and wrinkled and reaching up the sides of the container. Colonies are yellow when first visible, darkening to deep yellow and eventually brick red, if exposed to light. In fluid media, growth is on the surface only, unless a wetting agent (e.g. Tween 80) is added to the medium.
+
+
+== Cell structure and metabolism ==
+M. bovis is similar in structure and metabolism to M. tuberculosis. M. bovis is a Gram-positive, acid-fast, rod-shaped, aerobic bacterium. Unlike M. tuberculosis, M. bovis lacks pyruvate kinase activity, due to pykA containing a point mutation that affects binding of Mg2+ cofactor. Pyruvate kinase catalyses the final step of glycolysis, the dephosphorylation of phosphorenolpyruvate to pyruvate. Therefore, in M. bovis, glycolytic intermediates cannot enter oxidative metabolism. Although no specific studies have been performed, M. bovis seemingly must rely on amino acids or fatty acids as an alternative carbon source for energy metabolism.
+
+
+== Pathogenesis ==
+
+During the first half of the 20th century, M. bovis is estimated to have been responsible for more losses among farm animals than all other infectious diseases combined. Infection occurs if the bacterium is ingested or inhaled.
+M. bovis is usually transmitted to humans by consuming raw milk from infected cows, although it can also spread via aerosol droplets. Actual infections in humans are nowadays rare in developed countries, mainly because pasteurisation kills M. bovis bacteria in infected milk. In the UK, cattle are tested for the disease as part of an eradication program and culled if they test positive. Such cattle can still enter the human food chain, but only after a meat inspector or a government veterinary surgeon has inspected the carcass and certified that it is fit for human consumption. However, in areas of the developing world where pasteurisation is not routine, M. bovis is a relatively common cause of human tuberculosis.
+Bovine tuberculosis is a chronic infectious disease that affects a broad range of mammalian hosts, including humans, cattle, deer, llamas, pigs, domestic cats, wild carnivores (foxes, coyotes) and omnivores (common brushtail possum, mustelids and rodents); it rarely affects equids or sheep. The disease can be transmitted in several ways; for example, it can be spread in exhaled air, sputum, urine, faeces, and pus, so the disease can be transmitted by direct contact, contact with the excreta of an infected animal, or inhalation of aerosols, depending on the species involved.
+
+
+== Application to biotechnology ==
+M. bovis is the ancestor of the most widely used vaccine against tuberculosis, M. bovis bacillus Calmette-Guérin (BCG). The attenuated BCG strain was produced by serial passage starting from an initial virulent strain, subculturing on glycerine potato medium 230 times over a span of 13 years.
+
+
+== In non-human animals ==
+
+
+=== Control ===
+
+
+==== Testing ====
+Tuberculin skin testing is possible in cattle. Casal et al. 2012 tried both recombinant protein and overlapping peptide provocation, finding the peptide test to be less sensitive.
+The tuberculin test causes false positives in BCG-vaccinated cattle. The Detect Infected among Vaccinated Animals (DIVA) skin test is designed to detect only infected animals among vaccinated ones. Phase 1 trials were completed in the UK in 2022, and phase 2 by 2025.  (Technically speaking, DIVA is a descriptive term for all tests able to perform this kind of differentiation. The specific form of test being tested in the UK is DST-F, a fusion protein of three selected antigens not found in BCG. In this context, it makes BCG a marker vaccine.)
+
+
+==== Vaccination ====
+The BCG vaccine can be used in cattle. The CattleBCG vaccine, based on the BCG Danish strain, is the leading candidate in the UK. Its future implementation depends on the success of the DST-F trials.
+China approved a live intranasal vaccine based on strain HB150 (attenuated from HB0801) in February 2025, followed by an inactivated injected vaccine based on strain HM in March 2025.
+
+
+=== Epidemiology and responses ===
+
+
+==== China ====
+The first isolation of M. bovis (strain HB0801) in China was from beef cattle with pneumonia. It shows morbidity rates of 50–100% and mortality rates of 10–50% among affected herds.
+M. bovis is prevelant among the Chinese deer poopulation at 16.1%. It even more common among yaks with a seroprevalence of 48.7%.
+
+
+==== New Zealand ====
+In New Zealand, the introduced common brushtail possum is a vector for the spread of M. bovis. The Biosecurity Act 1993, which established a national pest-management strategy, is the legislation behind the control of the disease in New Zealand. The Animal Health Board operates a nationwide programme of cattle testing and possum control, with the goal of eradicating M. bovis from wild vector species across 2.5 million hectares – or one-quarter – of New Zealand's at-risk areas, by 2026, and eventually eradicating the disease entirely.
+The TB-free New Zealand programme is regarded as "world-leading". It has successfully reduced cattle- and deer-herd infection rates from more than 1700 in 1994 to fewer than 100 herds in July 2011. Much of this success can be attributed to sustained cattle controls reducing cross-infection and breaking the disease cycle. For example, at Hohotaka, in New Zealand's central North Island, control work from 1988 to 1994 achieved a sustained mean reduction of 87.5% in the density of TB‐infected possums. As expected, annual TB incidence in local cattle herds consequently declined by a similar amount (83.4%).
+Possums are controlled through a combination of trapping, ground-baiting, and where other methods are impractical, aerial treatment with 1080 poison.
+From 1979 to 1984, possum control was stopped due to lack of funding. From that point until 1994, TB rates in herds steadily increased. The area of New Zealand harbouring TB-infected wild animals expanded from about 10% of the country to 40%.
+The fact that possums are such effective transmitters of TB appears to be facilitated by their behaviour once they get the disease.
+
+
+==== United Kingdom ====
+
+In the 1930s, 40% of cattle in the UK were infected with M. bovis, and 50,000 new cases of human M. bovis infection were reported every year. According to DEFRA and the Health Protection Agency, the risk to people contracting TB from cattle in Great Britain would be low.
+Badgers (Meles meles) were first identified as carriers of M. bovis in 1971, but the report of an independent review committee in 1997 (the Krebs Report) concluded: "strong circumstantial evidence [exists] to suggest that badgers represent a significant source of M. bovis infection in cattle... [h]owever, the causal link... has not been proven". In essence, the contribution of badgers 'to the TB problem in British cattle' was at this point a hypothesis that needed to be tested, according to the report. The subsequent Randomised Badger Culling Trial  (designed, overseen and analysed by the Independent Scientific Group on Cattle TB, or ISG ) examined this hypothesis by conducting a large field trial of widescale (proactive) culling and localised reactive culling (in comparison with areas which received no badger culling). In their final report, the ISG concluded: "First, while badgers are clearly a source of cattle TB, careful evaluation of our own and others' data indicates that badger culling can make no meaningful contribution to cattle TB control in Britain. Indeed, some policies under consideration are likely to make matters worse rather than better. Second, weaknesses in cattle-testing regimens mean that cattle themselves contribute significantly to the persistence and spread of disease in all areas where TB occurs, and in some parts of Britain are likely to be the main source of infection. Scientific findings indicate that the rising incidence of disease can be reversed, and geographical spread contained, by the rigid application of cattle-based control measures alone." On 26 July 2007, the Minister of State, Department for Environment, Food and Rural Affairs (Lord Rooker) said, "My Lords, we welcome the Independent Scientific Group's final report, which further improves the evidence base. We are carefully considering the issues that the report raises, and will continue to work with industry, government advisers, and scientific experts in reaching policy decisions on these issues."
+In the UK, many other mammals are infected with M. bovis, although the frequency of isolation is generally much less than cattle and badgers. In some areas of south-west England, deer, especially fallow deer due to their gregarious behaviour, have been implicated as possible maintenance hosts for transmission of bovine TB
+In some localised areas, the risk of transmission to cattle from fallow deer has been argued to be greater than it is from badgers.
+One of the reasons that the Department for Environment, Food, and Rural Affairs requires infected or suspected cattle to be culled is to meet EU regulations for the export of meat and dairy products to other member states. Meat and dairy products can still be sold in the UK into the human food chain, providing the relevant carcass inspections and milk pasteurisation have been applied.
+The Spread of the disease to humans by domestic pets became evident in March 2014 when Public Health England announced two people in England developed bTB infections after contact with a domestic cat. The two human cases were linked to 9 cases of bTB infection in cats in Berkshire and Hampshire in 2013. These are the first documented cases of cat-to-human transmission.
+In a 2010 opinion piece in Trends in Microbiology, Paul and David Torgerson argued that bovine tuberculosis is a negligible public health problem in the UK, providing milk is pasteurized. Bovine TB is very rarely spread by aerosol from cattle to humans. Therefore, the bovine tuberculosis control programme in the UK in its present form is a misallocation of resources and provides no benefit to society. Indeed, very little evidence exists of a positive cost benefit to the livestock industry, as few studies have been undertaken on the direct costs of bovine TB to animal production. Milk pasteurisation was the single public health intervention that prevented the transmission of bovine TB to humans, and no justification for the present test and cull policy in the UK is seen.
+In July 2010, the second issue of the discussion document Bovine TB, Time for a Rethink  was published by Rethink Bovine TB, an independent research group. The paper considers current policy in England and Wales. It proposes an alternative solution that is both practical and cost-effective. In the paper, evidence is drawn from DEFRA and the work by Professors Paul and David Torgerson.
+In March 2012, think tank the Bow Group published a target paper urging the government to reconsider its plans to cull thousands of badgers to control bovine TB, stating that the findings of Labour's major badger-culling trials several years prior were that culling does not work. The paper was authored by Graham Godwin-Pearson with a foreword by singer Brian May and contributions by leading tuberculosis scientists, including Lord Krebs.
+In 2017, Rachel Tanner and Helen McShane, of the Jenner Institute, Oxford, published research on replacing, reducing, and refining the use of animals in tuberculosis vaccine research.
+Cattle can be vaccinated against TB using the BCG vaccine used to immunise humans. This is not currently done in the UK because the vaccine causes false positives for the current tuberculin test. As mentioned above, the DIVA test is being developed to resolve this incompatibility between vaccination and testing.
+
+
+==== United States ====
+
+According to Barbara Gutmann Rosenkrantz, the late 19th-century discovery of the relationship between bovine and human tuberculosis led to state and federal attempts to stamp out bovine tuberculosis. The campaigns for clean milk and meat frightened city people into supporting controls, although at the time, little evidence showed that tuberculosis was spread to humans through infected meat or milk. The campaigns against impure meat and milk led to tension between the developing veterinarian profession and the medical profession, each claiming that area as part of their expertise.
+By 1917, 5% of American cattle were infected with M. bovis (bovine tuberculosis or bTB), including 10% of dairy animals and 1–2% of beef cattle. The rates were going up. Around 1900, 15,000 Americans, mostly children, died each year from bTB, and many more suffered pain and disfigurement.
+Threatened by a sales cutoff ordered by urban public health officials, Vermont state government officials launched an innovative eradication campaign against bTB on farms, from 1877 to 1936. They made use of the latest German research and thereby kept the New York City and Boston markets. Vermont was exceptional, for across the country many farmers strenuously resisted bovine tuberculosis eradication as an expensive violation of their libertarian right to farm.
+In recent decades, M. bovis infections in cattle herds in the United States are not common. M. bovis is endemic in white-tailed deer (Odocoileus virginianus) in the northeastern portion of Michigan and northern Minnesota, and sporadically imported from Mexico. Only the white-tailed deer has been confirmed as a maintenance host in the Michigan outbreak of bTB, although other mammals such as raccoons (Procyon lotor), opossums (Didelphis virginiana), and coyotes (Canis latrans) can serve as spill-over and dead-end hosts. The fact that white-tailed deer are a maintenance host for M. bovis remains a significant barrier to the US nationwide eradication of the disease in livestock. In 2008, 733,998 licensed deer hunters harvested around 489,922 white-tailed deer in an attempt to control the disease's spread. These hunters purchased more than 1.5 million deer-harvest tags. The economic value of deer hunting to Michigan's economy in the drive to eradicate TB is substantial. For example, in 2006, hunters spent US$507 million hunting white-tailed deer in Michigan.
+
+
+==== Global ====
+The disease is found in cattle throughout the globe, but some countries have been able to reduce or limit the incidence of the disease through a process of "test and cull" of the cattle stock. Most of Europe and several Caribbean countries (including Cuba) are virtually free of M. bovis. Australia is officially disease-free since the successful BTEC program, but residual infections might exist in feral water buffalo in isolated parts of the Northern Territory. In Canada, affected wild elk and white-tailed deer are found in and around Riding Mountain National Park in Manitoba. To improve control and eliminate bTB, the Canadian Food Inspection Agency has split Manitoba into two management areas: The Riding Mountain TB eradication area, where the disease has been found, and the Manitoba TB Eradication Area, the rest of the province outside RMEA where the disease has not been found. The disease has also been found in African buffalo in South Africa.
+
+
+== In humans ==
+The infection of humans with M. bovis is referred to as zoonotic tuberculosis. The main route of transmission is through the consumption of unpasteurized milk or other dairy products, although transmission via inhalation and consumption of poorly cooked meat has also been reported.
+Human zoonotic tuberculosis cases are linked to the presence of bovine tuberculosis in cattle, and regions without adequate disease control measures and/or disease surveillance are at higher risk.
+Controlling this disease requires animal health, food safety, and human health sectors to work together under a One Health approach (multi-disciplinary collaborations to improve the health of animals, people, and the environment).
+M. bovis can also be transmitted from human to human; an outbreak occurred in Birmingham, England, in 2004, and from human to cattle, but such occurrences are rare.
+In 2018, based on the most recent Global Tuberculosis Report, an estimated 142,000 new cases of zoonotic tuberculosis, and 12,500 deaths due to the disease occurred. Cases of zoonotic tuberculosis have been reported in Africa, the Americas, Europe, the Eastern Mediterranean, and the Western Pacific. In Mexico, the disease is prevalent and rising among humans. It is difficult to clinically distinguish zoonotic tuberculosis from tuberculosis caused by Mycobacterium tuberculosis in people, and the current most commonly used diagnostics cannot effectively distinguish between M. bovis and M. tuberculosis, which contributes to an underestimation of total cases worldwide.
+In 2017, the World Health Organization (WHO), World Organization for Animal Health (OIE), Food and Agriculture Organization (FAO), and The International Union Against Tuberculosis and Lung Disease (The Union), published the first Roadmap for Zoonotic Tuberculosis, recognizing zoonotic tuberculosis as a prominent global health problem.
+This 2017 Roadmap identified ten priority areas for addressing zoonotic tuberculosis, which includes collecting more accurate data, improving diagnostics, closing research gaps, improving food safety, reducing M. bovis in animal populations, identifying risk factors for transmission, increasing awareness, developing policies, implementing interventions, and increasing investments. To align with goals outlined in the Stop TB Partnership Global Plan to End TB 2016–2020, The Roadmap outlines specific milestones and goals to be met within this time frame.
+
+
+== Treatment ==
+M. bovis is innately resistant to pyrazinamide (the majority of strains carry a H57D PncA mutation when compared to M. tuberculosis)
+so the standard human treatment is isoniazid and rifampicin for 9 months.
+Most cattle that test positive are killed.
+
+
+== See also ==
+Christopher Morcom
+Badger culling in the United Kingdom
+Veterinary medicine
+Paratuberculosis
+Mycobacterium avium complex
+
+
+== References ==
+
+
+== External links ==
+TB free New Zealand Archived 30 August 2011 at the Wayback Machine – TB control programme in New Zealand
+Bovine TB information on Department of Conservation website – The use of 1080 for pest control in New Zealand – Possums as reservoirs of bovine tuberculosis
+Information about bovine TB on 1080: The Facts website – Facts about how 1080 poison is used to control bovine TB in New Zealand
+Background on immunology and testing for Bovine TB – The background on immunology and testing for Bovine Tuberculosis.
+Tuberculosis – Mycobacterium bovis – Health Protection Agency

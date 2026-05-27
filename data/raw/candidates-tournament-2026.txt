@@ -1,0 +1,92 @@
+The 2026 Candidates Tournament was an eight-player chess tournament, held to determine the challenger for the World Chess Championship 2026. The tournament took place at the Cap St Georges Hotel and Resort in Pegeia, Cyprus, between 28 March and 16 April 2026, alongside the Women's Candidates Tournament 2026. As with every Candidates Tournament since 2013, it was a double round-robin tournament. 
+Javokhir Sindarov won five of the first six rounds, winning the tournament with a round to spare and setting a points record for the Candidates in the process. He thus earned the right to play in the World Chess Championship 2026 against the reigning World Chess Champion Gukesh Dommaraju.
+
+
+== Qualification ==
+The eight players to qualify to the Candidates Tournament were:
+
+Unlike any other Candidates Tournaments, and any FIDE World Championship cycle (except 1999–2004 during the split-title period), there was no automatic spot for the runner-up of the previous Championship (Ding Liren). To compensate, the 2024 championship had been considered an eligible tournament for the FIDE Circuit, with the runner-up obtaining special bonus points for the 2025 FIDE Circuit based on the score.
+
+
+=== FIDE rating qualifier ===
+Despite reforms to the rating qualifier ahead of the 2024 Candidates Tournament, controversy arose over the allocation of a spot to the Candidates by rating. As stated in the regulations, a non-qualified player is able to qualify "provided the player has played at least 40 games rated for the February 2025 through January 2026 standard rating lists, including at least 15 in any of the six consecutive lists from August 2025 to January 2026." Hikaru Nakamura, who ultimately secured the spot to the Candidates, opted to play in local U.S. and Canada tournaments: Louisiana State Championship, Iowa Open, Maritime Open, and Dulles Open. In these four events he played 22 games meeting the regulations criteria (plus one game not applying) in order to reach the 40-game threshold, having played 18 games beforehand. He scored 20 wins and 2 draws against an opposition with an average Elo rating of 2090.
+This garnered criticism from some grandmasters, notably Hans Niemann and Jacob Aagaard. However, Magnus Carlsen (who has not met the 40-game requirement and has publicly stated his lack of interest in qualifying for the Candidates) and Susan Polgar defended Nakamura, with the latter highlighting the openness that Nakamura showed by "discussing it publicly in advance and streaming his games". In response to the criticism, Nakamura noted earlier that "he is in the later stage of his playing life and wants to ensure he makes the most of his remaining chances to compete in Candidates cycles."
+Starting on 1 October 2025, FIDE announced partial changes to the rating system in response to Nakamura's rating gain from playing lower-level opponents. For players rated above 2650, winning against opponents with a 400-point difference no longer gained 0.8 Elo points, instead only gaining 0.1 Elo points for a win and no rating gain when playing opponents with a difference of 735 points. Grandmaster David Howell called the reform "short-sighted and flawed", saying that FIDE could simply have required "a minimum average of opponents' ratings" for qualification to the Candidates, and arguing the change "will least impact the top players" and "negatively affect those who are dependent on open tournaments to make a living". The updated rules did not change Nakamura's approach, who continued to play in small tournaments to reach the 40-game threshold. He achieved this after winning the 1st Annual Washington Dulles Open on tiebreak in early November, guaranteeing that he would get the rating spot.
+The following table shows the ratings of the players with the top average ratings from August 2025 to January 2026.
+
+
+== Organization ==
+The tournament was an eight-player, double round-robin tournament, meaning there were 14 rounds with each player facing the others twice: once with the black pieces and once with the white pieces. The tournament winner would qualify to play Gukesh Dommaraju for the World Championship in 2026.
+
+
+=== Regulations ===
+The time control was 120 minutes for the first 40 moves, then 30 minutes for the rest of the game, plus a 30-second increment per move starting from move 41. Players got 1 point for a win, ½ point for a draw and 0 points for a loss. The pairings and colours for each round would be decided via a draw, which would be conducted not later than four weeks before the tournament.
+Tiebreaks for the first place would have been addressed as follows:
+
+If two players were tied, they would play two rapid chess games at 15 minutes plus 10 seconds per move. If a three- to six-way tie occurred, a single round-robin would be played. If seven or eight players are tied, a single round-robin would be played with a time limit of 10 minutes plus 5 seconds per move.
+If any players were tied for first after the rapid chess games, they would play two blitz chess games at 3 minutes plus 2 seconds per move. In the case of more than two players being tied, a single round-robin would be played.
+If any players were still tied for first after these blitz chess games, the remaining players would play a knock-out blitz tournament at the same time control. In each mini-match of the proposed knock-out tournament, the first player to win a game would win the mini-match.
+Ties for places other than first were broken by, in order: (1) Sonneborn–Berger score; (2) total number of wins; (3) head-to-head score among tied players; (4) drawing of lots.
+
+
+=== Prize money ===
+The prize money was €70,000 for first place, €45,000 for second place, and €25,000 for third place (with players on the same number of points sharing prize money, irrespective of tie-breaks), plus €5,000 per half-point for every player, for a minimum total prize pool of €700,000, according to the regulations.
+
+
+=== Arbiters ===
+The Chief Arbiter for the event was Takis Nikolopoulos (Greece) with Andrew Howie (Scotland) and Ana Srebrnič (Slovenia) both acting as Deputy Chief Arbiter and Fair Play Officer.
+
+
+=== Schedule ===
+On 10 November 2025, FIDE announced the following schedule. Matches began daily at 15:30 EEST (UTC +3).
+
+
+== Results ==
+
+
+=== Standings ===
+
+
+=== Points by round ===
+This table shows the total number of wins minus the total number of losses each player had after each round. The symbol '=' indicates the player had won and lost the same number of games after that round. Green backgrounds indicate the player(s) with the highest score after each round. Red backgrounds indicate players who could no longer win the tournament after each round.
+
+
+=== Summary ===
+
+Caruana, Sindarov and Praggnanandhaa all won in round 1. Caruana outplayed Nakamura after the latter drifted in a deceptively complicated midgame. Caruana's conversion was not flawless, but Nakamura missed a crucial saving resource (80...Kc7!) and had to resign. Sindarov got a poor position against Esipenko, but Esipenko miscalculated a crucial line and wound up losing instead. Praggnanandhaa played the Grand Prix Attack against Giri, a rare line at top level, but one that surprised Giri. Praggnanandhaa achieved an opening advantage and converted flawlessly.
+In round 2, all four games were drawn. Sindarov chose a line against the Petrov that resulted in an early queen exchange and managed to create a space advantage in the resulting queenless middlegame. However he allowed the exchange of Blübaum's restricted knight and thereafter the game petered out. Likewise Esipenko was unable to turn his own small edge in the middlegame into anything more tangible after active defence by Nakamura.
+
+The third round saw Caruana and Sindarov both win again. Wei Yi sprang the first surprise against Caruana in the opening, sacrificing two pawns as black in an English Opening. However, he allowed his light-squared bishop to be entombed on h3. The position was still equal, but it was black who was required to show greater precision. The combination of 16...Rc5? and 17...Ne5? allowed Caruana to simply win the bishop on h3 for no compensation. Wei Yi resigned after just 19 moves. With 13...Nxb4!? Sindarov sacrificed a piece for two pawns and a lasting initiative against Praggnanandhaa's king in the centre. While the position remained complex and objectively balanced, it was easier to play for black and eventually Praggnanandhaa blundered in mutual time pressure. Therefore, Sindarov and Caruana held an advantage of a point over the rest of the field after three rounds.
+In round 4, the two co-leaders faced off. Sindarov defeated Caruana after outpreparing him in the Queen's Gambit Accepted and establishing a time advantage of over an hour. 18.Bc4! pinpointed the problem of the black king still in the centre, while preventing Qd5 to exploit white's own king's weakness on the long diagonal. Sindarov's 3.5/4 is the fastest-ever start in this Candidates format. Elsewhere, Giri defeated Esipenko in a complicated Najdorf after finding 18...Ba4!, a key resource that gave him enough time to secure his king and make use of his extra pawn and two bishops. Giri thus moved back to an even score for the tournament. Nakamura had a chance to join him but ultimately miscalculated while a pawn up in a double rook endgame against Wei Yi and the game was drawn.
+
+In round 5, Sindarov won his third game in a row after out-preparing Nakamura in the Marshall Gambit. Nakamura missed Sindarov's 12...0-0 in his preparation, and after a 67-minute think played 13.h4?, allowing Sindarov to take the initiative and ultimately win the game. Nakamura later claimed that his team failed to include the castling line into his preparation notes. After his loss against Sindarov in round 4, Caruana bounced back against Blübaum with a rare idea in the Petrov, in which he was able to outplay Blübaum. This win kept Caruana within 1 point of Sindarov, and 1 point ahead of Giri and Praggnanandhaa in a distant joint third place.
+In round 6, Sindarov extended his lead over Caruana to 1.5 points, after defeating Wei Yi with the black pieces. Grandmaster Vidit Gujrathi highlighted Sindarov's use of 15...Bg4 instead of seeking equality by playing the pragmatic 15...Ra3, which he remarked that would lead to long term compensation and that he is "very good at it". Praggnanandhaa and Nakamura notably drew in their game, with the former employing the Nimzo-Indian Defence to open the game, but with both players trading knights and bishops, the position remained equal throughout the game.
+
+Heading into the rest day, Sindarov's 4 game win-streak was stopped with a draw by Anish Giri in round 7. Sindarov once again achieved an opening edge and an advantageous position, but this time Giri successfully held an exchange-down fortress. Even so, Sindarov already had as many wins as the previous four winners of the Candidates by the halfway point (Gukesh in 2024, Nepomniachtchi in both 2022 and 2020/21, and Caruana in 2018 ended their Candidates tournaments with 4 wins each). Wei Yi achieved the only decisive result in the round after defeating Andrey Esipenko with the black pieces. After Esipenko played the worse 14.Bd2?! instead of 14.0-0-0, Wei put together a queenside attack that culminated in 26...Bb5!!, sacrificing his rook to maintain his initiative.
+Two decisive results took place in round 8, with Nakamura and Giri picking up wins against Caruana and Praggnanandhaa respectively. Nakamura opted for the English Opening, and in a double-rook endgame Caruana played 28...h5? instead of 28...Rab2. With Caruana unable to prevent white from doubling rooks on the seventh rank (by following up with 29...Rb7 to defend against this), Nakamura converted his advantage to pick up his first win of the event. With Giri having an advantage by move 25, Praggnanandhaa later played 35...Qf7? with 7 minutes on the clock instead of the solid 35...Bb5 (the continuation 36.Re3 Ba4 37.e6 Bc2 would have allowed the bishop to be positioned on e4 and maintain a draw). Giri wrapped up the game in 46 moves after pushing a passed pawn to join Caruana in second place.
+
+Giri continued his strong momentum to solely clinch second place in round 9, after defeating Caruana with the black pieces. Under time pressure, Caruana chose to play 38.Kg3? instead of capturing the c6 pawn with en passant, which allowed Giri to play 42...f5+! and follow up with 43.exf5 Kh6!!. With checkmate looming, Caruana resigned and was handed his second consecutive loss of the tournmanent. Notably, tournament leader Sindarov and Praggnanandhaa were unable to convert their advantageous positions, as the latter in his game against Wei Yi missed 42.b4! which allowed his opponent to equalize, and both settled for draws. Sindarov still led the way, 1.5 points ahead of Giri.
+In round 10, Sindarov completed the double over Praggnanandhaa by defeating him again in a topical line of the Queen's Gambit Declined. Sindarov sacrificed a piece in accordance with the established theory but Praggnanandhaa was well prepared. However, again the position required absolute precision from the player with extra material and 22...Bd7?? gave Sindarov a chance to transpose into a favourable queen-versus-two-rooks endgame with black lacking counterplay due to his eternally unsafe king. Giri exerted some pressure against Nakamura but never enjoyed a concrete advantage and the game was drawn. Sindarov thus reclaimed the two-point advantage he had previously held after round 8. The tournament was effectively over, and after further draws in rounds 11 and 12, Sindarov confirmed himself as the challenger for the next World Chess Championship. His winning score of 10/14 set a new record for the Candidates, beating Ian Nepomniachtchi's 9.5/14 score in the Candidates Tournament 2022.
+
+
+=== Results by round ===
+In February 2026, FIDE announced pairings for the tournament.
+
+
+== See also ==
+Women's Candidates Tournament 2026
+World Chess Championship 2026
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+Official site, FIDE
+Regulations for the FIDE Candidates Tournament 2026, FIDE
+FIDE Candidates 2026: games and commentary at chess.com
+World Championship Candidates (2026): games at chessgames.com
+Candidates Tournament 2026: Players, Format & Schedule — Shatranj Live

@@ -1,0 +1,76 @@
+Artemis III is an upcoming spaceflight mission, planned to be the second crewed mission in NASA's Artemis lunar exploration program, with a targeted launch in late 2027. The crew will launch aboard the Space Launch System (SLS) rocket carrying the Orion spacecraft.
+The mission will rendezvous in Earth orbit with vehicles such as SpaceX's Starship HLS and Blue Origin's Blue Moon commercially developed Human Landing Systems (HLS). These will be launched separately by their commercial providers, with the mission testing rendezvous and docking operations and may also include evaluation of the Axiom Extravehicular Mobility Unit (AxEMU) space suit. It is broadly comparable to Apollo 9 in the Apollo program.
+Artemis III was originally planned as the first crewed lunar landing since Apollo 17 in 1972. By 2023, however, NASA had indicated the mission could proceed without a landing due to Orion spacecraft heat shield concerns and delays in the development of the Starship HLS. Alternative concepts studied included a crewed visit to the now-cancelled Lunar Gateway space station and a low Earth-orbit docking test between Orion and the Starship HLS.
+On February 27, 2026, NASA administrator Jared Isaacman confirmed a revised plan for Artemis III to perform tests with one or both landers in Earth orbit, with Artemis IV tentatively designated as the first crewed lunar landing mission of the Artemis program, scheduled for 2028.
+
+
+== Overview ==
+The original goal of the Artemis III mission was to land a crew at the Moon's south polar region. The mission would have seen two astronauts land on the surface of the Moon for a stay of about one week. According to NASA, total mission duration including flights would have been about 30 days.
+In February 2026, the mission plan was revised to be a crewed test in Earth orbit. Astronauts will test the docking of the Orion capsule with at least one, but possibly both, of the lunar landers from SpaceX and Blue Origin. They are also planning to test propulsion, life support, and communication systems of the landers, and test the new spacesuits that will be used on the Moon, the Axiom Extravehicular Mobility Unit (AxEMU). In April 2026, Axiom confirmed that it was working towards a test flight of the AxEMU in 2027, but said that it had not yet been decided if those tests will happen on Artemis III or on the International Space Station.
+Mission planners are considering both low Earth orbit (LEO) and high Earth orbit (HEO) profiles. A LEO mission could allow NASA to save an Interim Cryogenic Propulsion Stage for use on Artemis IV, while a HEO mission would better simulate thermal and operational conditions encountered near the Moon and provide a more rigorous test of Orion's systems. As of April 2026, NASA had not finalized whether it would dock with one or both HLS vehicles, with decisions dependent in part on the development progress and launch cadence of commercial partners. By May 2026, it was revealed that Artemis III is planned to fly into a 463 km (250 nmi) low Earth orbit.
+
+
+== Spacecraft ==
+
+
+=== Space Launch System ===
+
+The Space Launch System (SLS) is a super heavy-lift launch vehicle used to send the Orion spacecraft into orbit. The core stage for this mission is planned to use RS-25 engines E2048, E2052, E2054, and E2057, all of which previously flew on Space Shuttle missions and were refurbished by Aerojet Rocketdyne.
+The upper section of the core stage was built by Boeing, including the liquid hydrogen and liquid oxygen tanks, intertank, and forward skirt, was completed in April 2026 at NASA's Michoud Assembly Facility in New Orleans and was delivered to the Kennedy Space Center aboard the Pegasus barge on April 28. After arrival, the engine section, with its RS-25 engines, is to be installed. The refurbished engines are scheduled to be delivered from Stennis Space Center in Mississippi no later than July 2026.
+The mobile launch tower was returned to the Vehicle Assembly Building at Kennedy Space Center following Artemis II for refurbishment and preparation for subsequent stacking operations.
+In May 2026, NASA announced that the mission will not use the agency's one remaining Interim Cryogenic Propulsion Stage (ICPS), preserving it for use on Artemis IV. Instead, NASA will use a "spacer", a representation of the overall dimensions of an upper stage but without propulsive capabilities. At the time, NASA said that design and fabrication of the spacer was already underway at the Marshall Space Flight Center.
+
+
+=== Orion ===
+
+Like the previous two missions, Orion is the crew transport vehicle being used by all of the Artemis missions thereafter. It will transport the crew from Earth to orbit, dock with the HLS lander, and return the crew back to Earth.
+The European Service Module (ESM) for Artemis III, ESM-3, was delivered to NASA from the Airbus facility in Bremen, Germany, sometime in September 2024.
+The spacecraft's pressure vessel was built by Lockheed Martin at the Michoud Assembly Facility and shipped to the Kennedy Space Center in August 2021 for final assembly. As of early 2026, production of the Artemis III Orion spacecraft was ongoing, with an internal readiness date of January 2028. Following a revision to Artemis III mission plans, which target a late 2027 launch, NASA and Lockheed Martin have taken steps to speed up Orion rates.
+
+
+=== Lunar landers ===
+
+Artemis III is planned to test one or both of two Human Landing System (HLS) lunar landers in Earth orbit: SpaceX's Starship HLS and a Blue Origin lander, reportedly a crew-carrying variant of Blue Moon Mark 1. The mission includes testing of rendezvous and docking operations with Orion. As of April 2026, both HLS landers remain under development and must complete NASA's human-rating certification process before crewed operations.
+As of May 2026, the maturity of the landers remained unclear. A NASA statement described the vehicles as "pathfinders" and stated that the agency was "defining the concept of operations for the mission" based on the capabilities of the Blue Moon and Starship HLS vehicles. NASA also stated that Artemis III astronauts "could potentially enter at least one lander test article", indicating that procedures involving the landers had not yet been finalized, and the mission might not include full crew operations aboard the vehicles, such as powered flight or separation from Orion. If astronauts are not expected to enter or conduct independent operations, one or both landers might lack fully operational life-support systems or other crew-capable hardware at the time of the mission.
+
+
+== History ==
+
+
+=== Early planning ===
+Upon the December 2017 ratification of the first Trump administration's Space Policy Directive 1, a crewed lunar campaign—later known as the Artemis program—using the Orion Multi-Purpose Crew Vehicle (MPCV) and a space station in lunar orbit was established. Originally billed as Exploration Mission-3 (EM-3), the goal of the mission was to send four astronauts into a near-rectilinear halo orbit around the Moon and deliver the ESPRIT and U.S. Utilization Module to the now cancelled lunar space station, known as the Gateway.
+By May 2019, however, ESPRIT and the U.S. Utilization Module—renamed HALO—were re-manifested to fly separately on a commercial launch vehicle. Artemis III, as it was billed, was repurposed to accelerate the first crewed lunar landing of the Artemis program by the end of 2024, with a profile that would have seen the Orion MPCV rendezvous with a minimal Gateway space station made up of only the Power and Propulsion Element and a small habitat and docking node with an attached commercially procured lunar lander known as the Human Landing System (HLS). By early 2020, plans for Orion and the HLS to rendezvous with the Gateway were abandoned in favor of direct docking of Orion and HLS, and delivery of the Gateway after Artemis III.
+
+
+=== Delays ===
+On August 10, 2021, a U.S. government Office of Inspector General audit reported a conclusion that the spacesuits would not be ready to be used until April 2025 at the earliest, likely delaying the mission from the planned late 2024 launch date. Axiom Space will design the space suits, with collaboration from fashion house Prada. On November 9, 2021, the Administrator of NASA, Bill Nelson, confirmed that Artemis III would launch no earlier than 2025.
+In June 2023, Jim Free, NASA's associate administrator for exploration systems development, said that launch would "probably" be no earlier than 2026. Later in December 2023, the U.S. Government Accountability Office reported the mission was unlikely to occur before 2027. In January 2024, NASA officially delayed Artemis III to no earlier than September 2026.
+The European Service Module for the mission was completed and delivered to NASA in September 2024. In December 2024, NASA officially delayed Artemis III to no earlier than 2027.
+In January 2026, NASA delayed Artemis III to no earlier than 2028, before revising the plan in February to target a launch in late 2027. Under the updated profile, the mission would no longer attempt a lunar landing, instead conducting rendezvous and docking tests in low Earth orbit with commercially developed lunar landers, including SpaceX's Starship HLS and Blue Origin's Blue Moon, and evaluating the Axiom Extravehicular Mobility Unit (AxEMU). The target of late 2027 was confirmed on April 27, 2026, when NASA Administrator Jared Isaacman was questioned before the House Appropriations Committee. Isaacman explained that the initial target of early 2027 would be missed due to delays in the development for both SpaceX's Starship HLS and Blue Origin's Blue Moon.
+
+
+=== Development and funding ===
+
+In March 2024, NASA announced the scientific instruments to be included on the mission were a compact, autonomous seismometer suite called the Lunar Environment Monitoring Station, or LEMS. LEMS will characterize the regional structure of the Moon's crust and mantle to inform the development of lunar formation and evolution models. Another instrument is Lunar Effects on Agricultural Flora, a.k.a. LEAF, which will investigate the impact of the lunar surface environment on space crops. The third instrument is the Lunar Dielectric Analyzer, or LDA, an internationally contributed payload that will measure the regolith's ability to propagate an electric field.
+On May 2, 2025, the second Trump administration released its fiscal year 2026 budget proposal, which proposed canceling the SLS and Orion spacecraft after Artemis III due to the former's cost of $4 billion per launch. However, on July 4, 2025, President Donald Trump signed the One Big Beautiful Bill Act into law, which included provisions that allocated funding for continued development and operation of the SLS and Orion spacecraft beyond the Artemis III mission.
+In August 2025, NASA reported that processing had begun on the lower "boat tail" section of the SLS core stage at the Vehicle Assembly Building (VAB) at Kennedy Space Center (KSC).
+
+In April 2026, the upper section of the core stage, including the propellant tanks and forward structures built by Boeing at the Michoud Assembly Facility, was completed and transported to KSC aboard the Pegasus barge. The stage departed New Orleans on April 20, arrived in Florida on April 27, and was transferred into the VAB on April 28. The solid rocket boosters were not included in the transportation, though will be assembled in coming months.
+
+
+== See also ==
+
+List of Artemis missions, a full list of complete and upcoming Artemis missions
+List of missions to the Moon, a full list of missions to the Moon
+Apollo 9, a 1969 mission similar to Artemis III that involved a crewed test of the lunar lander in Earth orbit
+
+
+== References ==
+
+
+== External links ==
+
+Orion website at NASA.gov
+Space Launch System website at NASA.gov
+Artemis III at NASA.gov
+Artemis III at ESA

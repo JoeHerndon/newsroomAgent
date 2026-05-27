@@ -1,0 +1,124 @@
+The 2026 Virginia redistricting amendment was a legislatively referred constitutional amendment that appeared on the April 21, 2026, ballot in the state of Virginia. The amendment passed by a slim margin, but it was subsequently struck down by the Supreme Court of Virginia. As such, the power to draw the state's congressional districts was retained by a bipartisan commission, and was not given back to the state legislature, as the amendment had intended to do. The amendment, mostly favored by Democrats and opposed by Republicans, is part of a larger, nationwide gerrymandering battle. It was first considered by Virginia lawmakers in October 2025, and was given preliminary approval on October 31. The Virginia General Assembly passed the amendment a second time on January 16, 2026. 
+On January 27, 2026, a Virginia judge ruled the amendment to be unlawful, blocking it from appearing on the April ballot. However, Virginia Democrats appealed the decision, and on February 13, the Virginia Supreme Court allowed the referendum to proceed as scheduled.  On February 19, following the Virginia Supreme Court ruling, a Virginia judge ruled the amendment to be unlawful on grounds unrelated to the original ruling and unrelated to the ruling of the Virginia Supreme Court, once again blocking the proposed amendment from appearing on the April ballot. On March 2, a court ruled that the election can still take place and legal battles will be resolved after the election. Early voting began on March 6, 2026, and ended on April 18, 2026.
+As voters approved the referendum, a new map already passed by the General Assembly would have been used for the 2026 elections, as well as in 2028 and 2030, had the amendment survived a legal challenge before the Virginia Supreme Court. The map was gerrymandered to favor Democrats in 10 out of 11 congressional districts, which would have represented a gain of four seats for the Democratic party.
+On April 22, a Virginia judge issued an injunction against the certification and implementation of the results; Attorney General Jay Jones sought a stay from the Supreme Court of Virginia. On April 28, the Supreme Court of Virginia denied the stay, leaving the lower court's injunction in place, until the constitutionality of the proposal was adjudicated. The Supreme Court struck down the amendment on May 8, 2026.
+Following the ruling, Virginia House Speaker Don Scott and Attorney General Jay Jones filed an emergency appeal to the US Supreme Court and filed a motion requesting the state Supreme Court to pause its ruling from taking effect while the appeal plays out. The appeal was rejected by the U.S. Supreme Court on May 15.
+
+
+== Background ==
+
+
+=== 2020 amendment ===
+In 2020, Virginia voters approved a constitutional amendment giving the power to draw congressional districts in the state to a bipartisan commission, which is composed of eight legislators and eight citizens.
+
+
+=== First passage of amendment legislation ===
+
+In 2025, Texas lawmakers adopted a new congressional map, which is expected to grant Republicans as many as five additional congressional seats. Other states followed suit with their own redistricting plans.
+On October 23, 2025, The New York Times first reported that Virginia was planning a constitutional amendment to allow for redistricting.
+In Virginia, constitutional amendments have to be approved by the legislature in two consecutive legislative sessions, with a general election in between them, prior to being sent to the public for final passage. On October 24, Democratic House Majority Leader Charniele Herring introduced a resolution that would allow the Virginia General Assembly to consider constitutional amendments related to redistricting during a special session. On October 27, the resolution was agreed to by the House of Delegates in a 50–42 vote, and on October 29, the state Senate agreed to it in a 21–17 vote.
+On October 28, four Democratic Virginia Delegates introduced the redistricting constitutional amendment. On the same day, Jason Miyares, the Republican Attorney General of Virginia who was also running for a second term in 2025, issued an opinion saying that the process required to add a constitutional amendment to the ballot cannot be shortened by the General Assembly calling a special session during an ongoing election.
+On October 29, the Virginia House of Delegates passed the amendment in a 51–42 vote on party lines. Before the vote took place, there was contentious debate, and the Sergeant-at-Arms was called to the floor at one point. The bill then moved on to the Senate Privileges & Elections Committee, which approved the bill in an 8–6 vote the same day. The Senate passed the bill 21–16 on October 31, sending it to the 164th General Assembly for further consideration.
+
+
+=== Second passage ===
+Virginia Democrats retained and expanded their majority in the Virginia House of Delegates in the 2025 election, in addition to flipping all three executive offices. Upon winning the trifecta, Virginia Democrats intended to re-approve the amendment and send it to a referendum for voter's consideration. Upon approval of the referendum, the amendment and approved map would take effect prior to the 2026 congressional elections. As the amendment needed to be passed a second time, the Senate, on January 16, 2026, passed the constitutional amendment, following the House of Delegates which had done so earlier in the week. Governor Spanberger signed enabling legislation for the referendum on February 4.
+
+
+== Litigation ==
+On October 28, 2025, a lawsuit was filed in Tazewell County Circuit Court against the House and Senate clerks, seeking an injunction against the effort. The lawsuit argued that the purpose of the special session was to settle a budget dispute in 2024, and although the session was still technically open, the new bill was outside of the scope of the session, making it invalid. Delegate Terry Kilgore, state Senators Bill Stanley and Ryan McDougle, and a citizen member of the commonwealth's bipartisan redistricting commission were named as plaintiffs. The lawsuit was initially delayed, as the case's judge, Jack Hurley Jr., declined to intervene in legislative proceedings until the General Assembly had passed the amendment, resulting in Republican plaintiffs temporarily dropping the case. Judge Hurley ran for the Virginia House of Delegates in 1999 as a Republican. 
+Following the General Assembly's re-passage of the amendment to the ballot in January 2026, the case was expanded to request a ruling on all of the following: 
+
+Whether or not the General Assembly was able to pass a constitutional amendment during a special session not called to consider it;
+Whether or not the General Assembly had violated a statutory mandate which requires it to post any proposed constitutional amendment at circuit clerk offices for public inspection at least 90 days before the election on which it would be voted on;
+Whether or not the General Assembly's first passage had actually met the requirement to pass the amendment both before and after a general election, as early voting had started over a month prior to the first passage.
+Hurley ordered both parties to submit briefs within 10 days.
+On January 27, Hurley ruled that the amendment was unlawful, concurring both that the special session did not have the authority to pass such a measure and that the House of Delegates scheduled the election too early to satisfy the postage requirement. Hurley noted that, by the time of the 163rd Virginia General Assembly's first passage of the redistricting amendment, over 1 million Virginians had already voted for the general election, over 33% of total turnout. For this, he agreed on the third and final question posed by the Republican plaintiffs, that being that the amendment did not sufficiently pass scrutiny for having been passed "before the general election." The ruling blocked the amendment from going before voters. 
+Virginia Democratic leaders condemned the decision and announced an intention to appeal the ruling, with House Speaker Don Scott calling the case an example of “court-shopping, plain and simple." They also pointed out that the postage requirement was removed whenever Virginia adopted their current constitution, and is only still in effect because of an oversight in the state code. Later that day, the Virginia Senate passed SB769 (2026), which would repeal the 90-day postage requirement before the election and redirect the appellate process from the Court of Appeals of Virginia to the Circuit Court of the City of Richmond, which denied to block the 163rd General Assembly from passing the same amendment in November 2025. However, the House of Delegates did not take up this bill.
+On February 13, the Supreme Court of Virginia allowed the special election to approve the new maps to proceed as they consider the case. On February 18, the Republican National Committee filed a separate lawsuit, also in Tazewell county, asking for an emergency injunction to halt voting. The next day, February 19, Judge Hurley granted that motion, barring state officials from "administering, preparing for, taking any action to further the procedure of the referendum, or otherwise moving forward with causing an election to be held on the proposed constitutional amendment", citing the phrase "restore fairness" in the ballot language as misleading and unconstitutional.  On March 4, the Virginia Supreme Court stayed that ruling, allowing early voting to begin on March 6. Briefs on the lawsuit were due to the Virginia Supreme Court two days after the April 21 election, and oral arguments were held the following Monday.
+
+On April 22, Hurley issued a final order of judgment, ruling that the House bill that authorized the referendum was void ab initio as it violated two resolutions of the General Assembly, portions of the Virginia State Code, and the Constitution of Virginia. Hurley also permanently enjoined the State Board of Elections from certifying the results of the referendum and blocked the State Board from executing any changes that would be required to instate a new congressional map. Attorney General of Virginia Jay Jones appealed the ruling, however SCOVA declined to enter a stay blocking it from coming into effect. The State Board of Elections was therefore unable to certify the results at its May 1, 2026, meeting. The amendment was blocked by the Virginia Supreme Court on May 8, 2026, in a 4–3 decision that ruled that the legislature had violated procedural requirements when it was placed on the ballot. Virginia Democrats stated that they would appeal the decision to the United States Supreme Court. However, the U.S. Supreme Court rejected the appeal on May 15.
+
+
+== Contents and amendment ==
+
+
+=== Ballot wording ===
+The ballot wording was as follows:Question: Should the Constitution of Virginia be amended to allow the General Assembly to temporarily adopt new congressional districts to restore fairness in the upcoming elections, while ensuring Virginia's standard redistricting process resumes for all future redistricting after the 2030 census?
+
+
+=== Proposed changes ===
+The referendum proposed to voters that the constitution be amended to read:
+
+ARTICLE II
+FRANCHISE AND OFFICERS
+Section 6. Apportionment.
+Members of the House of Representatives of the United States and members of the Senate and of the House of Delegates of the General Assembly shall be elected from electoral districts established pursuant to this section and Section 6-A of this Constitution. Every electoral district shall be composed of contiguous and compact territory and shall be so constituted as to give, as nearly as is practicable, representation in proportion to the population of the district. Every electoral district shall be drawn in accordance with the requirements of federal and state laws that address racial and ethnic fairness, including the Equal Protection Clause of the Fourteenth Amendment to the Constitution of the United States and provisions of the Voting Rights Act of 1965, as amended, and judicial decisions interpreting such laws. Districts shall provide, where practicable, opportunities for racial and ethnic communities to elect candidates of their choice. The Commonwealth shall be reapportioned into electoral districts in accordance with this section and Section 6-A in the year 2021 and every ten years thereafter, except that the General Assembly shall be authorized to modify one or more congressional districts at any point following the adoption of a decennial reapportionment law, but prior to the next decennial census, in the event that any State of the United States of America conducts a redistricting of such state's congressional districts at any point following that state's adoption of a decennial reapportionment law for any purpose other than (i) the completion of the state's decennial redistricting in response to a federal census and reapportionment mandated by the Constitution of the United States and established in federal law or (ii) as ordered by any state or federal court to remedy an unlawful or unconstitutional district map. Any such decennial reapportionment law, or reapportionment law modifying one or more congressional districts, shall take effect immediately and not be subject to the limitations contained in Article IV, Section 13, of this Constitution. The districts delineated in the decennial any reapportionment law shall be implemented for the November general election for the United States House of Representatives, Senate, or House of Delegates, respectively, that is held immediately prior to the expiration of the term being served in the year that the reapportionment law is required to be enacted. A member in office at the time that a decennial redistricting law is enacted shall complete his term of office and shall continue to represent the district from which he was elected for the duration of such term of office so long as he does not move his residence from the district from which he was elected. Any vacancy occurring during such term shall be filled from the same district that elected the member whose vacancy is being filled.
+SCHEDULE
+Section 6. Application and duration of certain redistricting amendments.
+
+The authorization in Article II, Section 6 authorizing the General Assembly to modify one or more congressional districts at any point following adoption of a decennial reapportionment law in the event that any State of the United States of America conducts a redistricting of such state's congressional districts at any point following that state's adoption of a decennial reapportionment law shall be limited to making such modifications between January 1, 2025, and October 31, 2030, in response to actions taken by another state between January 1, 2025, and October 31, 2030.
+
+
+=== Replacement map ===
+On February 20, 2026, the Virginia General Assembly passed and Governor Spanberger signed legislation drawing a new congressional map for Virginia, which would have taken effect if the Supreme Court had not struck down the amendment. The map was considered a Democratic gerrymander, which, based on previous election results, would have favored Democrats in 10 out of the 11 districts. This would have been an increase from the 6 they won in the 2024 congressional elections. The University of Virginia Center for Politics believed that two of the Democratic-favored districts could potentially be competitive for Republicans, and described the map as "baconmandered", where strongly-Democratic Northern Virginia was cut up across multiple districts stretching to the rest of the state. Notable county split increases included Prince William County, which would have gone from two congressional districts to five, and Fairfax County, which would have gone from three congressional districts to five. Sabato's Crystal Ball rated the putative 9th district as Safe Republican, the putative 2nd district as Tossup, the putative 6th district as Leans Democrat, the putative 5th district as Likely Democrat, and the putative 1st, 3rd, 4th, 7th, 8th, 10th and 11th districts as Safe Democratic.
+
+
+== Campaign ==
+The campaign was the most expensive for any ballot measure in Virginia's history, with over $83 million spent during the campaign. As of April 16, $93 million had been raised, with 95% of funding raised by dark money groups not required to disclose their donors.
+
+
+=== Support ===
+
+As of April 6, the main Democratic-aligned group supporting the referendum, Virginians for Fair Elections, had raised $64 million, including $40 million from House Majority Forward, a group aligned with House Democratic leaders; $12 million from the Fairness Project; and $5 million from the Fund for Policy Reform, founded by George Soros. Mark Warner and Tim Kaine contributed $100,000 through their leadership PACs. By April 6, the group had spent $39.1 million in advertising. Key figures in support of the amendment included governor Abigail Spanberger and former president Barack Obama. A billboard by the Page County Democratic Committee implied that president Donald Trump was in favor of the amendment.
+
+
+=== Opposition ===
+As of April 6, the main Republican-aligned group opposing the referendum, Virginians for Fair Maps, had raised around $20 million, the majority of which came from a group of the same name which had not disclosed its donors. By April 6, the group had spent $4.8 million in advertising. 
+The Justice for Democracy PAC, a group largely financed by Peter Thiel, raised over $9 million. The group utilized imagery from the civil rights movement and of the KKK in its advertising, alleging that the amendment would lead to "black and brown voices silenced". It also sent mailers implying that former president Barack Obama opposed the amendment. The NAACP and civil rights leaders condemned the ads as misinformation.
+Additionally, the Justice for Democracy PAC sent mailers implying that Governor Abigail Spanberger opposed the amendment, using a 2019 quote in which she referred to gerrymandering as "detrimental to our democracy." Both President Obama and Governor Spanberger had endorsed the amendment.
+
+
+=== Sign stealing ===
+
+Both pro- and anti-amendment signs were stolen. In Isle of Wight County, for example, the chairman of the county's Republican chapter reported that more than 50 opposition signs were stolen, and the county's Democratic chapter reported that several signs in support were stolen. In Petersburg, a surveillance camera recorded an individual stealing a "Vote No" sign.
+
+
+== Endorsements ==
+
+
+=== Support ===
+Arguments in favor of the measure included that it intended to counteract other states that had gerrymandered their congressional maps, that it was a temporary change, and that voters decided whether to redistrict, rather than only politicians.
+
+
+=== Opposition ===
+Arguments in opposition included that it was a partisan gerrymander, that rural and conservative voters would have their voice diluted, and that Virginia voters already decided on the issue in 2020, approving a bipartisan commission.
+
+
+== Polling ==
+
+
+== Results ==
+
+
+=== By county and independent city ===
+
+
+=== By congressional district ===
+"Yes" won in 6 of 11 congressional districts.
+
+
+== See also ==
+2026 Virginia elections
+2026 Florida redistricting
+2026 Tennessee redistricting
+2025 Missouri redistricting
+Redistricting in Virginia
+
+
+== Notes ==
+
+Partisan clients
+
+
+== References ==

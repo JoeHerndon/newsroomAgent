@@ -1,0 +1,156 @@
+Yahoo ( , styled yahoo! in its logo) is an American web portal that provides the search engine Yahoo Search and related services including My Yahoo, Yahoo Mail, Yahoo News, Yahoo Finance, Yahoo Sports, y!entertainment, yahoo!life, and its advertising platform, Yahoo Native. It is operated by the namesake company Yahoo! Inc., which is 90% owned by Apollo Global Management and 10% by Verizon.
+Yahoo was established by Jerry Yang and David Filo in January 1994 and was one of the pioneers of the early Internet era in the 1990s. However, its use declined in the 2010s as some of its services were discontinued, and it lost market share to Facebook and Google.
+
+
+== Etymology ==
+The word "yahoo" is a backronym for "Yet Another Hierarchically Organized Oracle" or "Yet Another Hierarchical Officious Oracle". The term "hierarchical" described how the Yahoo database was arranged in layers of subcategories. The term "oracle" was intended to mean "source of truth and wisdom", and the term "officious", rather than being related to the word's normal meaning, described the many office workers who would use the Yahoo database while surfing from work. However, founders Filo and Yang insist they mainly selected the name because they liked the slang definition of a "yahoo" (used by college students in David Filo's native Louisiana in the late 1980s and early 1990s to refer to an unsophisticated, rural Southerner): "rude, unsophisticated, uncouth." This meaning derives from the Yahoo race of fictional beings from Gulliver's Travels.
+
+
+== History ==
+
+
+=== Founding ===
+
+In January 1994, Jerry Yang and David Filo were electrical engineering graduate students at Stanford University, when they created a website named "Jerry and David's guide to the World Wide Web". The site was a human-edited web directory, organized in a hierarchy, as opposed to a searchable index of pages. In March 1994, "Jerry and David's Guide to the World Wide Web" was renamed "Yahoo!" and became known as the Yahoo Directory. The "yahoo.com" domain was registered on January 18, 1995.
+Yahoo was incorporated on March 2, 1995. In 1995, a search engine function, called Yahoo Search, was introduced. This allowed users to search Yahoo Directory. Yahoo soon became the first popular online directory and search engine on the World Wide Web.
+
+
+=== Expansion and the dot-com bubble ===
+
+Yahoo grew rapidly throughout the 1990s. Yahoo became a public company via an initial public offering in April 1996 and its stock price rose 600% within two years. Like many search engines and web directories, Yahoo added a web portal, putting it in competition with services including Excite, Lycos, and America Online. By 1998, Yahoo was the most popular starting point for web users, and the human-edited Yahoo Directory the most popular search engine, receiving 95 million page views per day, triple that of rival Excite. It also made many high-profile acquisitions. Yahoo began offering free e-mail from October 1997 after the acquisition of RocketMail, which was then renamed to Yahoo Mail. In 1998, Yahoo replaced AltaVista as the crawler-based search engine underlying the Directory with Inktomi. Yahoo's two biggest acquisitions were made in 1999: Geocities for $3.6 billion and Broadcast.com for $5.7 billion.
+Its stock price skyrocketed during the dot-com bubble, closing at an all-time high of $118.75/share on January 3, 2000. However, after the dot-com bubble burst, it reached a post-bubble low of $8.11 on September 26, 2001.
+Yahoo began using Google for search in June 2000. Over the next four years, it developed its own search technologies, which it began using in 2004 partly using technology from its $280 million acquisition of Inktomi in 2002. In response to Google's Gmail, Yahoo began to offer unlimited email storage in 2007. In 2008, the company laid off hundreds of people as it struggled from competition.
+Yahoo had two failed attempts to acquire Google; in 1998, Larry Page and Sergey Brin approached Yahoo to sell their nascent search engine for $1 million, but Yahoo declined the offer.
+In 2002, when Terry Semel entered into negotiations to purchase Google. Google was reportedly seeking a price of $5 billion. After weeks of negotiation, Yahoo's final offer was $3 billion, a figure that Google's leadership rejected, leading them to terminate the deal. The failure to acquire Google in this second instance is widely considered one of the largest strategic errors in corporate history.
+In February 2008, Microsoft made an unsolicited bid to acquire Yahoo for $44.6 billion. Yahoo rejected the bid, claiming that it "substantially undervalues" the company and was not in the interest of its shareholders. Although Microsoft increased its bid to $47 billion, Yahoo insisted on another 10%+ increase to the offer and Microsoft cancelled the offer in May 2008.
+Carol Bartz, formerly the CEO of Autodesk, replaced Yang as CEO in January 2009. In September 2011, after failing to meet targets, she was fired by chairman Roy J. Bostock; CFO Tim Morse was named as Interim CEO of the company.
+In August 2010, Yahoo! Groups started rolling out a major software change. This change was denounced by a vast majority of users.
+On September 29, 2010, Jim Stoneham, Vice President of Yahoo!'s Communities products, announced that based on members feedback, Yahoo! Groups would be rolling back the recent changes.
+In April 2012, after the appointment of Scott Thompson as CEO, several key executives resigned, including chief product officer Blake Irving. On April 4, 2012, Yahoo announced 2,000 layoffs, or about 14% of its 14,100 workers by the end of year, expected to save around $375 million annually. In an email sent to employees in April 2012, Thompson reiterated his view that customers should come first at Yahoo. He also completely reorganized the company.
+On May 13, 2012, Thompson was fired and was replaced on an interim basis by Ross Levinsohn, recently appointed head of Yahoo's new Media group. Several associates of Third Point Management, including Daniel S. Loeb were nominated to the board of directors. Thompson's total compensation for his 130-day tenure with Yahoo was at least $7.3 million.
+On July 15, 2012, Marissa Mayer was appointed president and CEO of Yahoo, effective July 17, 2012.
+In June 2013, Yahoo acquired blogging site Tumblr for $1.1 billion in cash, with Tumblr's CEO and founder David Karp continuing to run the site. In July 2013, Yahoo announced plans to open an office in San Francisco.
+On August 2, 2013, Yahoo acquired Rockmelt; its staff was retained, but all of its existing products were terminated.
+Data collated by comScore during July 2013 revealed that, during the month, more people in the U.S. visited Yahoo websites than Google; the first time that Yahoo outperformed Google since 2011. The data did not count mobile usage, nor Tumblr.
+Mayer also hired Katie Couric to be the anchor of a new online news operation and started an online food magazine. However, by January 2014, doubts about Mayer's progress emerged when Mayer fired her own first major hire, Henrique de Castro.
+On December 12, 2014, Yahoo acquired video advertising provider BrightRoll for $583 million.
+On November 21, 2014, Yahoo acquired Cooliris.
+In August 2023, it was announced Yahoo had acquired the San Francisco-headquartered social investing platform, Commonstock.
+In April 2024, it was announced Yahoo had acquired the AI-driven news aggregator app, Artifact.
+
+
+=== Decline, security breaches, and sale ===
+
+In March 2004, Yahoo! launched a paid inclusion program whereby commercial websites were guaranteed listings on the Yahoo! search engine after payment. This scheme was lucrative but proved unpopular both with website marketers (who were reluctant to pay), and the public (who were unhappy about the paid-for listings being indistinguishable from other search results). As of October 2006, Paid Inclusion ceased to guarantee any commercial listing and only helped the paid inclusion customers, by crawling their site more often and by providing some statistics on the searches that led to the page and some additional smart links (provided by customers as feeds) below the actual URL.
+By December 2015, Mayer was criticized as performance declined. Mayer was ranked as the least likable CEO in tech.
+On May 20, 2013, Flickr, Yahoo!'s image and video hosting website, unveiled a redesigned layout and additional features, including one terabyte of free storage for all users, seamless photostream, cover photo and updated Android App. The redesigned layout fills the page with dynamically re-sized photos and, on the home page, displays recent comments on photos. Tech Radar described the new style Flickr as representing a "sea change" in its purpose. Many users criticized the changes, and the site's help forum received thousands of negative comments.
+In January 2014, a large scale malware attack was discovered by Fox IT in the Netherlands that was targeted at Java and dated back to December 30, 2013, especially affecting users in Romania, France, and the UK and being delivered to 300,000 Yahoo! users per hour when they discovered it. Yahoo! was criticized for not providing any public guidance on the number of users affected or advice on what the affected users should do.
+
+In October 2016, Scott Ard, a prominent editorial director fired from Yahoo in 2015,  filed a lawsuit accusing Mayer of leading a sexist campaign to purge male employees. Ard, a male employee, stated "Mayer encouraged and fostered the use of [an employee performance-rating system] to accommodate management's subjective biases and personal opinions, to the detriment of Yahoo's male employees". In the suit, Ard claimed that, prior to his firing, he had received "fully satisfactory" performance reviews since starting at the company in 2011 as head of editorial programming for Yahoo's home page, yet he was relieved of his role that was given to a woman who had been recently hired by Megan Lieberman, the editor-in-chief of Yahoo News. The lawsuit states:Liberman stated that she was terminating [Ard] because she had not received a requested breakdown of [his] duties. [Ard] had already provided that very information as requested, however, and reminded Liberman that he had done so. Liberman's excuse for terminating [Ard] was a pretext. A second sexual discrimination lawsuit was filed separately by Gregory Anderson, who was fired in 2014, alleging the company's performance management system was arbitrary and unfair, making it the second sexism lawsuit Yahoo and Mayer faced in 2016.
+On February 2, 2016, Mayer announced layoffs amounting to 15% of the Yahoo workforce.
+On July 25, 2016, Verizon Communications announced the acquisition of Yahoo's core Internet business for $4.83 billion. The deal excluded Yahoo's 15% stake in Alibaba Group and 35.5% stake in Yahoo Japan.
+On February 21, 2017, as a result of the Yahoo data breaches, Verizon lowered its purchase price for Yahoo by $350 million and reached an agreement to share liabilities regarding the data breaches.
+On June 13, 2017, Verizon completed the acquisition of Yahoo and Marissa Mayer resigned.
+Yahoo, AOL, and HuffPost were to continue operating under their own names, under the umbrella of a new company, Oath Inc., later called Verizon Media.
+The parts of the original Yahoo! Inc. which were not purchased by Verizon Communications were renamed Altaba, which was later liquidated, making a final distribution in October 2020.
+In September 2021, investment funds managed by Apollo Global Management acquired 90% of Yahoo.
+In November 2021, Yahoo announced that it was ending operations in mainland China due to the increasingly challenging business and legal environment. Previously, the company discontinued China Yahoo Mail on August 20, 2013.
+In 2023, Yahoo announced that it would cut 20% of its workforce. The move followed mass layoffs from other tech giants including Google, Microsoft, Twitter, Inc, Meta, and Amazon. The company is set to lay off roughly 1,000 staff members of their 8,600 workers.
+
+
+== Products and services ==
+For a list of all current and defunct services offered by Yahoo, see List of Yahoo-owned sites and services.
+
+
+== Data breaches ==
+
+The company reported two major data breaches of user account data to hackers during the second half of 2016. The first announced breach, reported in September 2016, had occurred sometime in late 2014, and affected over 500 million Yahoo! user accounts. A separate data breach, occurring earlier around August 2013, was reported in December 2016, and affected over 1 billion user accounts. Both breaches are considered the largest discovered in the history of the Internet. Specific details of material taken include names, email addresses, telephone numbers, encrypted or unencrypted security questions and answers, dates of birth, and encrypted passwords. Further, Yahoo! reported that the late 2014 breach likely used manufactured web cookies to falsify login credentials, allowing hackers to gain access to any account without a password.
+On October 3, 2017, the company stated that all 3 billion of its user accounts were affected by the August 2013 theft.
+
+
+== Criticism ==
+
+
+=== DMCA notice to whistleblower ===
+On November 30, 2009, Yahoo was criticized by the Electronic Frontier Foundation for sending a DMCA notice to whistleblower website "Cryptome" for publicly posting details, prices, and procedures on obtaining private information pertaining to Yahoo's subscribers.
+
+
+==== Illegal access of user accounts by former Yahoo engineer ====
+In October 2019, a former Yahoo engineer, Reyes Daniel Ruiz, pleaded guilty to federal charges of illegally accessing user accounts. Ruiz had hacked about 6,000 users' accounts, including those of his friends, co-workers and many young women, seeking sexual images and videos.
+
+
+=== Censorship of private emails affiliated with Occupy Wall Street protests ===
+After some concerns over censorship of private emails regarding a website affiliated with Occupy Wall Street protests were raised, Yahoo responded with an apology and explained it as an accident.
+
+
+==== Adware and spyware ====
+Yahoo! has funded spyware and adware—advertising from Yahoo!'s clients often appears on-screen in pop-ups generated from adware that a user may have installed on their computer without realizing it by accepting online offers to download software to fix computer clocks or improve computer security, add browser enhancements, etc. The frequency of advertising pop-ups for spyware, generated from a partnership with advertising distributor Walnut Ventures, who had a direct partnership with Direct Revenue, could be increased or decreased based on Yahoo!'s immediate revenue needs, according to some former employees in Yahoo!'s sales department.
+
+
+==== Work in the People's Republic of China ====
+Yahoo!, along with Google China, Microsoft, Cisco, AOL, Skype, Nortel and others, has cooperated with the Chinese Communist Party in implementing a system of internet censorship in mainland China. Unlike Google or Microsoft, which generally keep confidential records of its users outside mainland China, Yahoo! stated that the company cannot protect the privacy and confidentiality of its mainland Chinese customers from the authorities. Critics say that the companies put profits before principles. Human Rights Watch and Reporters Without Borders state that it is "ironic that companies whose existence depends on freedom of information and expression have taken on the role of censor." 
+In September 2005, Reporters Without Borders reported that in April 2005, Shi Tao, a journalist working for a Chinese newspaper, was sentenced to 10 years in prison by the Changsha Intermediate People's Court of Hunan Province, China (First trial case no. 29), for "providing state secrets to foreign entities". The "secrets" were a brief list of censorship orders he sent from a Yahoo! Mail account to the Asia Democracy Forum before the anniversary of the 1989 Tiananmen Square protests and massacre.
+The verdict as published by the Chinese government stated that Shi Tao had sent the email through an anonymous Yahoo! account, that Yahoo! Holdings (the Hong Kong subsidiary of Yahoo) told the Chinese government that the IP address used to send the email was registered by the Hunan newspaper that Shi Tao worked for, and that police went straight to his offices and picked him up.
+In February 2006, Yahoo! General Counsel submitted a statement to the U.S. Congress in which Yahoo! denied knowing the true nature of the case against Shi Tao. In April 2006, Yahoo! Holdings (Hong Kong) was investigated by Hong Kong's Privacy Commissioner for Personal Data.
+On 2 June 2006, the union representing journalists in the UK and Ireland (NUJ) called on its 40,000 members to boycott all Yahoo! Inc. products and services to protest the Internet company's reported actions in China.
+In July 2007, evidence surfaced detailing the warrant which the Chinese authorities sent to Yahoo! officials, highlighting "State Secrets" as the charge against Shi Tao. The warrant requests to provide "all login times, corresponding IP addresses, and relevant email content from February 22, 2004, to present." for email ID "huoyan1989" Analyst reports and human rights organizations have said that this evidence directly contradicts Yahoo!'s testimony before the U.S. Congress in February 2006.
+Yahoo! contends it must respect the laws of governments in jurisdictions where it is operating.
+In February 2006, Reporters Without Borders released Chinese court documents stating that Yahoo! aided Chinese authorities in the case of dissident Li Zhi. In December 2003, Li Zhi was sentenced to 8 years imprisonment for "inciting subversion".
+Wang Xiaoning is a Chinese dissident from Shenyang who was arrested by authorities of the People's Republic of China for publishing controversial material online.
+In 2000 and 2001, Wang, who was an engineer by profession, posted electronic journals in a Yahoo! group calling for democratic reform and an end to single-party rule. He was arrested in September 2002 after Yahoo! assisted Chinese authorities by providing information. In September 2003, Wang was convicted of charges of "incitement to subvert state power" and sentenced to ten years in prison.
+On April 18, 2007, Xiaoning's wife Yu Ling sued Yahoo! under human rights laws in federal court in San Francisco, California, United States. Wang Xiaoning is named as a plaintiff in the Yahoo! suit, which was filed with help from the World Organization for Human Rights USA. "Yahoo! is guilty of 'an act of corporate irresponsibility,' said Morton Sklar, executive director of the group. "Yahoo! had reason to know that if they provided China with identification information that those individuals would be arrested."
+Yahoo!'s decision to assist China's authoritarian government came as part of a policy of reconciling its services with the Chinese government's policies. This came after China blocked Yahoo! services for a time. As reported in The Washington Post and many media sources:
+
+The suit says that in 2001, Wang was using a Yahoo! e-mail account to post anonymous writings to an Internet mailing list. The suit alleges that Yahoo!, under pressure from the Chinese government, blocked that account. Wang set up a new account via Yahoo! and began sending material again; the suit alleges that Yahoo! gave the government information that allowed it to identify and arrest Wang in September 2002. The suit says prosecutors in the Chinese courts cited Yahoo!'s cooperation.
+Human rights organizations groups are basing their case on a 217-year-old U.S. law to punish corporations for human rights violations abroad, an effort the Bush administration has opposed:
+
+In recent years, activists working with overseas plaintiffs have sued roughly two dozen businesses under the Alien Tort Claims Act, which the activists say grants jurisdiction to American courts over acts abroad that violate international norms. Written by the Founding Fathers in 1789 for a different purpose, the law was rarely invoked until the 1980s.
+On August 28, 2007, the World Organization for Human Rights sued Yahoo! for allegedly passing information (email and IP address) with the Chinese government that caused the arrests of writers and dissidents. The lawsuit was filed in San Francisco for journalists, Shi Tao, and Wang Xiaoning. Yahoo! stated that it supported privacy and free expression for it worked with other technology companies to solve human rights concerns.
+On November 6, 2007, the US congressional panel criticised Yahoo! for not giving full details to the House Foreign Affairs Committee the previous year, stating it had been "at best inexcusably negligent" and at worst "deceptive".
+
+
+==== Closing of user-created chat rooms, message boards, and profiles (2005) ====
+As a result of media scrutiny relating to Internet child predators and a lack of significant ad revenues, Yahoo!'s "user created" chatrooms were closed down in June 2005. Yahoo! News' message board section was closed December 19, 2006, due to the trolling phenomenon. In addition, in mid-October 2008, Yahoo! deleted all information in millions of user profiles with no advance notice and little explanation.
+
+
+==== Image search ====
+On May 25, 2006, a teacher who was intending to use the service with a class to search for "www", discovered that Yahoo!'s image search brought up sexually explicit images even when SafeSearch was on. Yahoo!'s response to this was, "Yahoo! is aware of this issue and is working to resolve it as quickly as possible".
+
+
+==== Shark fin controversy ====
+Yahoo Inc. previously owned a 14.95% stake in Alibaba, which had been criticized for facilitating the sale of shark-derived products. After investing in Alibaba, Yahoo! executives were asked about this issue, and responded: "We know the sale of shark products is both legal in Asia and a centuries-old tradition. This issue is largely a cultural-practices one."  Alibaba would later ban the sale of shark fins on its platform in 2009.
+
+
+==== GeoCities closure ====
+GeoCities was a popular web hosting service founded in 1994. At the point Yahoo! purchased it in January 1999, it was reportedly the third most-browsed site on the World Wide Web. Despite its popularity, it had still not become profitable by late 1998.
+Ten years later Yahoo! closed Geocities, deleting millions of web pages in the process.
+In September 2009, a month before it was closed, GeoCities received 10,477,049 unique visitors.
+Vijay Mukhi, an internet and cybersecurity expert quoted in the Business Standard, criticized Yahoo's management of GeoCities; Mukhi described GeoCities as "a lost opportunity for Yahoo!", adding that "they could have made it a Facebook if they wanted." Rich Skrenta, the CEO of Blekko, posted on Twitter an offer to take over GeoCities from Yahoo! in exchange for 50% future revenue share.
+
+
+== Partners and sponsorships ==
+
+On September 11, 2001, Yahoo announced its partnership with FIFA for the 2002 FIFA World Cup and 2006 FIFA World Cup tournaments. It was one of FIFA's 15 partners at the tournaments. The deal included co-branding the organization's websites.
+Yahoo sponsored the 2012 Sundance Film Festival.
+NBC Sports Group aligned with Yahoo Sports the same year with content and program offerings on mobile and desktop platforms.
+Yahoo announced television video partnerships in 2013 with Condé Nast, WWE, ABC NEWS, and CNBC. Yahoo entered into a 10-year collaboration in 2014, as a founding partner of Levi's Stadium, home of the San Francisco 49ers.
+The National Basketball Association partnered with Yahoo Sports to stream games, offer virtual and augmented-reality fan experiences, and in 2018 NBA League Pass. Yahoo Sportsbook launched in November 2019, a collaboration with BetMGM.
+BuzzFeed acquired HuffPost from Yahoo in November 2020, in a stock deal with Yahoo as a minority shareholder. The NFL partnered with Yahoo in 2020, to introduce a new "Watch Together" function on the Yahoo Sports app for interactive co-viewing through a synchronized livestream of local and primetime NFL games. The Paley Center for Media collaborated with Verizon Media to exclusively stream programs on Yahoo platforms beginning in 2020.
+Yahoo became the main sponsor for the Pramac Racing team and the first title sponsor for the 2021 ESport/MotoGP Championship season. Yahoo, the official partner for the September 2021 New York Fashion Week event also unveiled sponsorship for the Rebecca Minkoff collection via a NFT space. In September 2021, it was announced that Yahoo partnered with Shopify, connecting the e-commerce merchants on Yahoo Finance, AOL and elsewhere.
+
+
+== See also ==
+
+List of Yahoo-owned sites and services
+List of search engines
+Yahoo litigation
+
+
+== References ==
+
+
+== External links ==
+
+Official website 
+Yahoo products and services
+ALTABA and Yahoo EDGAR filing history

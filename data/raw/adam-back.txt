@@ -1,4 +1,4 @@
-Adam Back (born July 1970) is a British cryptographer and cypherpunk. He is the CEO of Blockstream, which he co-founded in 2014. He invented Hashcash, which is used in the bitcoin mining process. An investigation by the The New York Times suggested that he may be Satoshi Nakamoto, the pseudonymous inventor of bitcoin, though Back has denied this claim.
+Adam Back (born July 1970) is a British cryptographer and cypherpunk. He is the CEO of Blockstream, which he co-founded in 2014. He invented Hashcash, which is used in the bitcoin mining process. An investigation by The New York Times suggested that he may be Satoshi Nakamoto, the pseudonymous inventor of bitcoin, though Back has denied this claim.
 
 
 == Life ==

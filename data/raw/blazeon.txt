@@ -1,0 +1,53 @@
+BlaZeon is a horizontally scrolling shoot 'em up arcade game released by Atlus in 1992 and was ported to the Super Nintendo Entertainment System in the same year. The game's most distinguishable feature is that players come equipped with a device that allows them to freeze and control certain robots.
+
+
+== Gameplay ==
+
+The player is set in control of The Garland TFF-01, a sub-standard space fighter ship that is only armed with a semi-auto or rapid fire laser gun known as the Beam Vulcan and the Tranquilander. Some enemy units can be captured and used in play; certain enemy robots, when shot by the player's Tranquilander, will morph into an outline of themselves. The player can then fly into the outline, and take on the form of the enemy robot, taking control of its weapons, abilities and special attacks.
+There is also an addition to the boss battle scoring: similar to some shooters, players have the opportunity to increase their scores by beating the end level bosses within a certain time limit. Every time a boss battle is initiated, a timer will count down and once the boss is destroyed/killed before the timer reaches zero, then the time left will add to the player's end-level score; if the timer runs out, then the score at the end of the level will remain unaffected. Extends/1 Ups are awarded every 300,000 points.
+
+
+== The Bio-Cyborgs ==
+Mars: A Bio-Cyborg armed with the three-way firing Mega Cannon and comes equipped with three Atomic Shields which are two-second long explosive rings that protect the cyborg from harm.
+Grain Beat/Odyssey: A Bio-Cyborg armed only with the Funnel guns which can be arranged to fire in three different forward-firing positions.
+Shadow Blade: The fastest of the Bio-Cyborgs which comes equipped with the Twin Cannon and the Dimension Field which makes the ship invincible for ten seconds.
+Titan: A muscular Bio-Cyborg armed with the Slice Laser and comes equipped with unlimited homing missiles.
+Neptune: A horned Bio-Cyborg armed with the Wide Lazer and is equipped with two Hyper-Bombs, a powerful blast that fires forward.
+Baron: A winged Bio-Cyborg armed with the Sonic Gun and is equipped with unlimited Diffusing Bombs, a bomb that fires onto ground forces.
+Hyper D: The slowest of the Bio-Cyborgs which comes equipped with the twin, diagonal firing Beam Gun and is equipped with unlimited Vertical Shields, a flare weapon that not only hurts enemies but also destroys most enemy shots.
+
+
+== Story ==
+A united space force known as the Imperial Earth Army was launched past the Solar System. When the Imperial Earth Army returned, it came armed with large, living robots known as Bio-Cyborgs that it used to dominate and oppress the societies of Earth. Players assume the role of a rebel forces pilot who has launched a surprise attack against the oppressive Imperial Earth Army, armed with a recently developed weapon capable of controlling the Bio-Cyborgs.
+
+
+== Super NES version ==
+BlaZeon was ported from the arcades to the Super NES, but there were some significant differences between the two:
+
+The animated opening from the original was completely removed from the console version.
+2 Player co-op was removed from the home console port, although an option to change the game's difficulty and ship color was included.
+Many enemies were cut from the home console version: in stage 3, the walker enemies were removed and placed only once in the final stage while some of the organic enemies in stage 4 were either removed or their AI was changed.
+Many parts of the battleship Guanols were cut in the SNES port including a transport carrying parts of the level boss.
+The design of the underground stage, Shurice, was redesigned in backgrounds, foregrounds and mini-bosses in the console port. The level was also originally the third level in the Arcade version, but switched to Stage 4 in the console port.
+The ending (which only showed the game's Credits) was removed entirely from the home console version; instead, players restart the game with the same score and lives they beat the game with on a higher difficulty.
+
+
+== Reception ==
+
+In Japan, Game Machine listed BlaZeon in their June 1, 1992 issue as being the tenth most-popular arcade game for the previous two weeks. The Japanese publication Micom BASIC Magazine ranked the game eleventh in popularity in its July 1992 issue. AllGame's Brett Alan Weiss considered the possibility of controlling captured enemies original, but opined that the game was a mediocre and unremarkable shooter, due to its slow action and generic audiovisual presentation.
+
+
+=== Super NES ===
+The Super NES version received generally unfavorable reception from critics, holding a rating of 42.25% based on four reviews according to review aggregator GameRankings. Electronic Gaming Monthly's four editors found the SNES version to be "a better than average shooter", noting its capture power-up mechanic.
+Nintendo Power's three reviewers liked the ability to assume control of each Bio-Cyborgs, they ultimately regarded the Super NES version to be an average scrolling shooter. British publication Super Gamer gave the SNES conversion an unfavorable review, criticizing its "terrible" scrolling backgrounds and "poor" gameplay Roger Post of SHMUPS! (a classic network of GameSpy) reviewed the SNES adaptation, finding its gameplay slow and the soundtrack repetitive. Hardcore Gaming 101's Brett Pritchard disagreed with Weiss and Post, giving both the arcade and SNES versions positive retrospective outlooks.
+
+
+== Notes ==
+
+
+== References ==
+
+
+== External links ==
+BlaZeon credits
+Soundtrack information at SNESmusic.org

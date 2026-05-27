@@ -1,0 +1,53 @@
+A diglyceride, or  diacylglycerol (DAG), is a glyceride consisting of two fatty acid chains covalently bonded to a glycerol molecule through ester linkages. Two possible forms exist, 1,2-diacylglycerols and 1,3-diacylglycerols. Diglycerides are natural components of food fats, though minor in comparison to triglycerides.  DAGs can act as surfactants and are commonly used as emulsifiers in processed foods. DAG-enriched oil (particularly 1,3-DAG) has been investigated extensively as a fat substitute due to its ability to suppress the accumulation of body fat; with total annual sales of approximately USD 200 million in Japan since its introduction in the late 1990s till 2009.
+
+
+== Production ==
+Diglycerides are a minor component of many seed oils and are normally present at ~1–6%; or in the case of cottonseed oil as much as 10%. Industrial production is primarily achieved by a glycerolysis reaction between triglycerides and glycerol. The raw materials for this may be either vegetable oils or animal fats.
+
+
+== Food additive ==
+Diglycerides, generally in a mix with monoglycerides (E471), are common food additives largely used as emulsifiers. The values given in the nutritional labels for total fat, saturated fat, and trans fat do not include those present in mono- and diglycerides. They often are included in bakery products, beverages, ice cream, peanut butter, chewing gum, shortening, whipped toppings, margarine, confections, and some snack products, such as Pringles.
+
+
+== Biological functions ==
+
+
+=== Protein kinase C activation ===
+
+In biochemical signaling, diacylglycerol functions as a second messenger signaling lipid, and is a product of the hydrolysis of the phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) by the enzyme phospholipase C (PLC) (a membrane-bound enzyme) that, through the same reaction, produces inositol trisphosphate (IP3). Although inositol trisphosphate diffuses into the cytosol, diacylglycerol remains within the plasma membrane, due to its hydrophobic properties. IP3 stimulates the release of calcium ions from the smooth endoplasmic reticulum, whereas DAG is a physiological activator of protein kinase C (PKC). The production of DAG in the membrane facilitates translocation of PKC from the cytosol to the plasma membrane.
+
+
+=== Munc13/UNC-13 activation ===
+Diacylglycerol has been shown to exert some of its excitatory actions on vesicle release through interactions with the presynaptic priming protein family Munc13 coded by human genes UNC13A and UNC13B. Binding of DAG to the C1 domain of UNC13 increases the fusion competence of synaptic vesicles resulting in potentiated release.
+Diacylglycerol can be mimicked by the tumor-promoting compounds phorbol esters.
+
+
+=== Other ===
+In addition to activating PKC, diacylglycerol has a number of other functions in the cell:
+
+a source for prostaglandins
+a precursor of the endocannabinoid 2-arachidonoylglycerol
+an activator of a subfamily of transient receptor potential canonical (TRPC) cation channels, TRPC3/6/7.
+
+
+== Metabolism ==
+
+Synthesis of diacylglycerol begins with glycerol-3-phosphate, which is derived primarily from dihydroxyacetone phosphate, a product of glycolysis (usually in the cytoplasm of liver or adipose tissue cells). Glycerol-3-phosphate is first acylated with acyl-coenzyme A (acyl-CoA) to form lysophosphatidic acid, which is then acylated with another molecule of acyl-CoA to yield phosphatidic acid. Phosphatidic acid is then de-phosphorylated to form diacylglycerol.
+Dietary fat is mainly composed of triglycerides. Because triglycerides cannot be absorbed by the digestive system, triglycerides must first be enzymatically digested into monoacylglycerol, diacylglycerol, or free fatty acids. Diacylglycerol is a precursor to triacylglycerol (triglyceride), which is formed in the addition of a third fatty acid to the diacylglycerol under the catalysis of diglyceride acyltransferase.
+Since diacylglycerol is synthesized via phosphatidic acid, it will usually contain a saturated fatty acid at the C-1 position on the glycerol moiety and an unsaturated fatty acid at the C-2 position.
+Diacylglycerol can be phosphorylated to phosphatidic acid by diacylglycerol kinase.
+
+
+== Insulin resistance ==
+Activation of PKC-θ by diacylglycerol may cause insulin resistance in muscle by decreasing IRS1-associated PI3K activity. Similarly, activation of PKCε by diacyglycerol may cause insulin resistance in the liver.
+
+
+== See also ==
+Cell membrane
+Lipid
+Monoglyceride
+Triglyceride
+Ultra-processed food
+
+
+== References ==
