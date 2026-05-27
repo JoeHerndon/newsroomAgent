@@ -18,6 +18,12 @@ Ingests a curated folder of news articles into a local vector store, then answer
 
 ## Architecture
 
+The supervisor graph below is generated directly from the compiled LangGraph (`scripts/draw_graph.py`), so it always reflects the real node and edge topology rather than a hand-drawn approximation:
+
+![NewsroomAgent multi-agent graph: a supervisor routing between researcher, fact-checker, and writer workers, each looping back, with a conditional finish](docs/architecture_graph.png)
+
+The `supervisor` is the entry point and the hub. Each turn it checks the current state (research notes, verdicts, rejection rate, step budget) and routes to one of three workers, which all loop back to it. The `researcher` gathers cited facts from the MCP tools, the `factchecker` turns them into structured verdicts, and the `writer` drafts the script. It loops until enough claims are verified, then hands off to the writer. A step budget caps how many passes it gets, and if too few claims are verified it stops without writing a story.
+
 - `newsroomagent/ingest.py` loads `data/raw/*.txt`, chunks with a recursive splitter, embeds, and persists to `data/chroma/`.
 - `newsroomagent/retrieval.py` opens the persisted store and runs top-k similarity search, then prompts Claude with a citation-aware template.
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
