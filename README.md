@@ -1,10 +1,16 @@
 # newsroomAgent
 
-Work-in-progress newsroom research assistant. Multi-agent LangGraph pipeline (researcher, fact-checker, writer), RAG over a news corpus, custom MCP server.
+Newsroom research assistant. Multi-agent LangGraph pipeline (researcher, fact-checker, writer), RAG over a news corpus, custom MCP server.
 
 ## What it does
 
-Ingests a curated folder of news articles into a local vector store, then answers questions about them with citations back to the original files. Topics outside the archive return limited results. The retrieval is exposed through a FastAPI endpoint and an MCP server, so it can be driven from a browser, curl, or an MCP-aware agent like Claude.
+Given a news topic, three agents coordinate through a supervisor to produce a script. The researcher retrieves cited evidence from a local archive of news articles. The fact-checker validates each claim against that archive and emits structured pass/fail verdicts. The writer composes a news segment using only the verified claims. The supervisor tracks the rejection rate at each step and either advances to the writer, returns control to the researcher to correct the rejected claims, or aborts the run when too few claims meet the verification threshold. The pipeline is exposed two ways: as a FastAPI endpoint with a browser UI that streams each node's output in real time, and as an MCP server so any MCP client (such as Claude) can invoke it as a tool. Every run is traced end-to-end in LangSmith.
+
+## Demo
+
+https://github.com/user-attachments/assets/30838413-140f-47e3-b613-a2035201d095
+
+An 8-minute end-to-end run on a 2026 Peruvian general election query. Closes with the LangSmith trace showing token usage and latency.
 
 ## Stack
 
@@ -27,7 +33,7 @@ The `supervisor` is the entry point and the hub. Each turn it checks the current
 - `newsroomagent/ingest.py` loads `data/raw/*.txt`, chunks with a recursive splitter, embeds, and persists to `data/chroma/`.
 - `newsroomagent/retrieval.py` opens the persisted store and runs top-k similarity search, then prompts Claude with a citation-aware template.
 - `newsroomagent/mcp_server.py` exposes `archive_search`, `web_search`, and `get_current_time` over stdio so an MCP client can use the archive as a tool.
-- `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
+- `newsroomagent/graph.py` assembles the LangGraph pipeline: a supervisor node routes between researcher, fact-checker, and writer workers, capped by a step budget. Researcher gathers notes with citations via the MCP tools, fact-checker emits structured verdicts, writer drafts the final script.
 - `main.py` serves a FastAPI app with `/health` and `POST /research`.
 - `newsroomagent/api.py` serves a second FastAPI app that runs the full graph and streams each node's progress to the client over Server-Sent Events. It also serves a small browser UI (`newsroomagent/frontend/index.html`) at `/` that consumes that stream and shows live progress plus the final script.
 
@@ -47,23 +53,16 @@ Install dependencies:
 uv sync
 ```
 
-Build the vector store from `data/raw/*.txt`. Rerun whenever source articles or chunking config changes:
+Build the vector store from `data/raw/*.txt`. Rerun whenever source articles or chunking config changes.
+Requires Ollama.
 
 ```bash
 uv run python -c "from newsroomagent.ingest import ingest; ingest()"
 ```
 
-### Option 1: LangGraph pipeline
-Smoke test of the compiled graph. Spawns the MCP server, hands the supervisor a sample topic, and lets it route between researcher, fact-checker, writer until the script is ready or the step budget is hit. Prints the supervisor's routing trace and the final news script.
-
-```bash
-uv run python -m newsroomagent.graph
-```
-
-### Option 2: Streaming multi-agent API + browser demo
+### Option 1: Streaming multi-agent API + browser demo
 
 Runs the full supervisor graph and streams node-by-node progress over SSE.
-Requires Ollama running for `archive_search`.
 
 ```bash
 uv run uvicorn newsroomagent.api:app --reload
@@ -73,12 +72,19 @@ Then open `http://localhost:8000/` in a browser, enter a topic, and watch the
 researcher, fact-checker, and writer report progress live before the final
 script appears.
 
-Prefer the raw stream? Hit the endpoint directly with curl in a second terminal
+Prefer the raw stream? Hit the endpoint directly with curl in a second terminal.
 
 
 ```bash
 curl -N -G "http://localhost:8000/stream" \
   --data-urlencode "topic=What elections happened in India in 2026?"
+```
+
+### Option 2: LangGraph pipeline
+Smoke test of the compiled graph. Spawns the MCP server, hands the supervisor a sample topic, and lets it route between researcher, fact-checker, writer until the script is ready or the step budget is hit. Prints the supervisor's routing trace and the final news script.
+
+```bash
+uv run python -m newsroomagent.graph
 ```
 
 ### Option 3: Retrieval API (JSON)
@@ -120,4 +126,4 @@ for c in chunks:
 
 ## Status
 
-Active development. Working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per-node streaming both in the CLI and over an SSE HTTP endpoint, and a browser demo UI that visualizes the pipeline live. Next: demo video to be added to the README.
+Currently working: ingest, retrieval, citation-aware answers, FastAPI endpoint, MCP server with archive + web search, multi-agent supervisor graph (researcher / fact-checker / writer with step budget), pluggable Anthropic/Bedrock provider, LangSmith tracing, per-node streaming both in the CLI and over an SSE HTTP endpoint, and a browser demo UI that visualizes the pipeline live.
