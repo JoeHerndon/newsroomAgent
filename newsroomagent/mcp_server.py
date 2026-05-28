@@ -1,4 +1,7 @@
 import sys,os
+# DISABLE LANGSMITH TRACING IN THE SUBPROCESS.
+os.environ["LANGCHAIN_TRACING_V2"] = "false"
+
 from pathlib import Path
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
